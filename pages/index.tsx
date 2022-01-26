@@ -4,21 +4,27 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
+
+    let name:string;
+    let age:number;
+    let isMarried:boolean;
+    let hobbies:string[];
+    let role:[number,string];
+
+    type Person ={
+        name: string,
+        age?: number,
+    }
+
+    let person:Person ={
+        name: 'John',
+        age: 30,
+    }
+
+
     return (
-     
-      <div className="p-6 max-w-sm mx-auto bg-yellow rounded-xl shadow-lg flex items-center space-x-4">
-        <div className="shrink-0">
-         <div>
-           <img/>
-         </div>
-         <div className="text-xl font-medium text-black">
-            <p className="text-slate-500">Hello world!</p>
-         </div>
-            
-          
-        </div>
-      </div>
-    )
+            <h1>{name}</h1>
+        )
 }
 
 export default Home
