@@ -21,9 +21,11 @@ const Home: NextPage = () => {
         age: 30,
     }
 
+    let lot
+
 
     return (
-            <h1>{name}</h1>
+            <h1>{person.name}</h1>
         )
 }
 
