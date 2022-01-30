@@ -1,32 +1,20 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import InputField from '../components/inputFeild'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
 
-    let name:string;
-    let age:number;
-    let isMarried:boolean;
-    let hobbies:string[];
-    let role:[number,string];
-
-    type Person ={
-        name: string,
-        age?: number,
-    }
-
-    let person:Person ={
-        name: 'John',
-        age: 30,
-    }
-
-    let lot
-
 
     return (
-            <h1>{person.name}</h1>
-        )
+        <div>
+            <InputField/> 
+            <h1>Hello </h1>
+        </div>
+        
+      
+    )
 }
 
 export default Home
