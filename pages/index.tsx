@@ -10,11 +10,8 @@ const Home: NextPage = () => {
     return (
         
 
-        <div>
-            <div>
                 <Nav></Nav>
-            </div>
-        </div>
+         
         
       
     )
