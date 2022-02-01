@@ -9,8 +9,9 @@ const Home: NextPage = () => {
 
     return (
         
+       <Nav/>
 
-            <Nav/>
+            
          
         
       
