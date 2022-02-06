@@ -7,7 +7,7 @@ function Nav() {
     <header>
       <div className="container">
         <div className="text-lg">Kaustav Sharma</div>
-        <div>
+        <div className="text-align">
           <a>Home</a>
           <a>Projects</a>
           <a>About</a>
