@@ -6,7 +6,7 @@ import Hero from '../components/Hero'
 
 const Home: NextPage = () => {
   return (
-    <div className="bg-slate-200">
+    <div className="bg-body text-black">
       <Head>
         <title>Kaustav Sharma</title>
         <link rel="icon" href="/favicon.ico" />

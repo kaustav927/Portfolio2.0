@@ -1,6 +1,6 @@
-import React from 'react'
+import React, {useState} from 'react'
 
-import {useState} from 'react'
+
 
 function NavLink({to, children}) {
     return <a href={to} className={`mx-4`}>
@@ -25,7 +25,7 @@ function MobileNav({open, setOpen}) {
                 <a className="text-xl font-normal my-4" href="#contact" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}>
                     Contact
                 </a>
-                <a className="text-lg font-normal my-4 bg-slate-800 py-2 px-4 rounded text-white mx-auto" href="https://drive.google.com/file/d/18XyT6wPX2IWdWv0VCqOtwW7ZXYSuAm_g/view?usp=sharing" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}>
+                <a className="text-xl font-normal my-4 bg-slate-800 py-2 px-4 rounded text-white mx-auto" href="https://drive.google.com/file/d/18XyT6wPX2IWdWv0VCqOtwW7ZXYSuAm_g/view?usp=sharing" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}>
                     Resume
                 </a>
             </div>  
@@ -36,7 +36,7 @@ function MobileNav({open, setOpen}) {
 export default function Navbar() {
     const [open, setOpen] = useState(false)
     return (
-        <nav className="flex filter px-4 py-4 h-20 items-center px-8 md:px-14 lg-px24 w-full">
+        <nav className="flex container mx-auto justify-between py-4 h-20 items-center px-8 md:px-14 lg-px24 w-full">
             <MobileNav open={open} setOpen={setOpen}/>
             <div className="w-3/12 flex items-center">
                 <a className="text-2xl font-semibold  py-2 px-4" href="/">Kaustav Sharma</a>
