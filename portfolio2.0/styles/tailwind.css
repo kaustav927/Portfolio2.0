@@ -45,20 +45,3 @@
     src: url('/fonts/ClashDisplay-Variable.woff2') format('woff2');
   }
 }
-
-html,
-body {
-  scroll-behavior: smooth;
-}
-
-.left-50 {
-  left: 50%;
-}
-
-.right-50 {
-  right: 50%;
-}
-
-.top-50 {
-  top: 50%;
-}

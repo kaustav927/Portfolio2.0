@@ -6,7 +6,8 @@ import Hero from '../components/Hero'
 
 const Home: NextPage = () => {
   return (
-    <div className="bg-body text-black">
+    <body className="bg-cool-white h-screen overflow-hidden">
+      <div className="text-black">
       <Head>
         <title>Kaustav Sharma</title>
         <link rel="icon" href="/favicon.ico" />
@@ -16,7 +17,9 @@ const Home: NextPage = () => {
       <Hero/>
 
 
-    </div>
+     </div>
+    </body>
+   
   )
 }
 
