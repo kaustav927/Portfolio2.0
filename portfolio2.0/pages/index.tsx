@@ -7,7 +7,7 @@ import Footer from '../components/Footer'
 
 const Home: NextPage = () => {
   return (
-    <body className="bg-cool-white h-screen overflow-hidden">
+    <body className="bg-cool-white h-screen overflow-hidden body">
       <div className="text-black">
       <Head>
         <title>Kaustav Sharma</title>
@@ -16,7 +16,7 @@ const Home: NextPage = () => {
 
       <Navbar/>
       <Hero/>
-      <Footer/>
+    
 
 
      </div>
