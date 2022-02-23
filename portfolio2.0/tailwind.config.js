@@ -1,5 +1,4 @@
 module.exports = {
-
   darkmode:false,
   content: [
     './pages/**/*.{js,ts,jsx,tsx}',
