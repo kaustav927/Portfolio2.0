@@ -12,7 +12,7 @@ const Home: NextPage = () => {
       <div className="text-black">
       <Head>
         <title>Kaustav Sharma</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico"  />
       </Head>
 
       <Navbar/>
