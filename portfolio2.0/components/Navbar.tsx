@@ -13,19 +13,19 @@ function MobileNav({open, setOpen}) {
     return (
         <div className={`absolute top-0 left-0 h-screen w-screen bg-cool-white transform ${open ? "-translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out filter  `}>
             <div className="flex items-center justify-center filter bg-cool-white h-20"> {/*logo container*/}
-                <a className="text-xl font-semibold fontSize-" href="/">Kaustav Sharma</a>
+                <a className="text-xl font-cd-regular " href="/">Kaustav Sharma</a>
             </div>
             <div className="flex flex-col ml-4">
-                <a className="text-xl font-medium my-4" href="#about" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}>
+                <a className="text-sm font-medium my-4" href="#about" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}>
                     About
                 </a>
-                <a className="text-xl font-normal my-4" href="#projects" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}>
+                <a className="text-sm font-normal my-4" href="#projects" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}>
                     Projects
                 </a>
-                <a className="text-xl font-normal my-4" href="#contact" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}>
+                <a className="text-sm font-normal my-4" href="#contact" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}>
                     Contact
                 </a>
-                <a className="text-xl font-normal my-4 bg-slate-800 py-2 px-4 rounded text-white mx-auto" href="https://drive.google.com/file/d/18XyT6wPX2IWdWv0VCqOtwW7ZXYSuAm_g/view?usp=sharing" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}>
+                <a className="text-sm font-normal my-4 bg-slate-800 py-2 px-4 rounded text-white mx-auto" href="https://drive.google.com/file/d/18XyT6wPX2IWdWv0VCqOtwW7ZXYSuAm_g/view?usp=sharing" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}>
                     Resume
                 </a>
             </div>  
@@ -38,8 +38,9 @@ export default function Navbar() {
     return (
         <nav className="font-cd-regular flex container mx-auto justify-between py-4 my-8 h-20 items-center px-8 md:px-14 lg-px24 w-full">
             <MobileNav open={open} setOpen={setOpen}/>
-            <div className="w-3/12 flex items-center">
-                <a className="text-2xl font-semibold py-2 px-4" href="/">Kaustav Sharma</a>
+
+            <div className="w-4/12 flex items-center">
+                <a className="text-2xl font-cd-regular py-2 " href="/">Kaustav Sharma</a>
             </div>
             <div className="w-9/12 flex justify-end items-center">
 
@@ -54,18 +55,20 @@ export default function Navbar() {
 
                 <div className="hidden md:flex">
                     <NavLink to="#about">
-                       <h1 className="text-lg  py-2 px-4">About</h1>
+                       <h1 className="text-sm  py-2 px-4">About</h1>
                     </NavLink>
                     <NavLink to="#projects">
-                        <h1 className="text-lg  py-2 px-4">Projects</h1>
+                        <h1 className="text-sm  py-2 px-4">Projects</h1>
                     </NavLink>
                     <NavLink to="#contact">
-                        <h1 className="text-lg  py-2 px-4">Contact</h1>
+                        <h1 className="text-sm  py-2 px-4">Contact</h1>
                     </NavLink>
                     <NavLink to="https://drive.google.com/file/d/18XyT6wPX2IWdWv0VCqOtwW7ZXYSuAm_g/view?usp=sharing">
                         <h1 className="text-lg bg-slate-800 py-2 px-4 rounded text-white hover:bg-slate-800/3">Resume</h1>
                     </NavLink>
                 </div>
+
+
             </div>
         </nav>
     )

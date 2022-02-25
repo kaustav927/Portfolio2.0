@@ -43,6 +43,25 @@ module.exports = {
         '4xl': ['56px', {lineHeight: '64px', letterSpacing:'0.032em'}],
         '5xl': ['80px', {lineHeight: '80px', letterSpacing:'0.032em'}],
     },
+    animation: {
+      blob: "blob 7s infinite",
+    },
+    keyframes: {
+      blob: {
+        "0%": {
+          transform: "translate(0px, 0px) scale(1)",
+        },
+        "33%": {
+          transform: "translate(30px, -50px) scale(1.1)",
+        },
+        "66%": {
+          transform: "translate(-20px, 20px) scale(0.9)",
+        },
+        "100%": {
+          transform: "tranlate(0px, 0px) scale(1)",
+        },
+      },
+    },
   },
   },
   variants: {
