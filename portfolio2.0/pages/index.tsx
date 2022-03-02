@@ -1,12 +1,10 @@
-import type { NextPage } from 'next'
+import Container from '../components/Container';
 import Head from 'next/head'
-import Image from 'next/image'
 import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
-import Footer from '../components/Footer'
 import Projects from './Projects'
 
-const Home: NextPage = () => {
+export default function Home(){
   return (
     <body className="bg-cool-white h-screen overflow-hidden body">
       <div className="text-black">
@@ -26,5 +24,3 @@ const Home: NextPage = () => {
    
   )
 }
-
-export default Home
