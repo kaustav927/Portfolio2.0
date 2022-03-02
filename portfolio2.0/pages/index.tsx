@@ -1,10 +1,9 @@
 import Container from '../components/Container';
 import Image from 'next/image';
 import Link from 'next/link';
-import Head from 'next/head'
-import Navbar from '../components/Navbar'
-import Hero from '../components/Hero'
-import Projects from './Projects'
+import VideoCard from '../components/VideoCard';
+import Card from '../components/Card';
+
 
 export default function Home({ videos }) {
   return (
@@ -38,17 +37,17 @@ export default function Home({ videos }) {
           Featured Posts
         </h3>
         <div className="flex gap-6 flex-col md:flex-row">
-          <BlogPostCard
+          <Card
             title="Everything I Know About Style Guides, Design Systems, and Component Libraries"
             slug="style-guides-component-libraries-design-systems"
             gradient="from-[#D8B4FE] to-[#818CF8]"
           />
-          <BlogPostCard
+          <Card
             title="Rust Is The Future of JavaScript Infrastructure"
             slug="rust"
             gradient="from-[#6EE7B7] via-[#3B82F6] to-[#9333EA]"
           />
-          <BlogPostCard
+          <Card
             title="Past, Present, and Future of React State Management"
             slug="react-state-management"
             gradient="from-[#FDE68A] via-[#FCA5A5] to-[#FECACA]"
