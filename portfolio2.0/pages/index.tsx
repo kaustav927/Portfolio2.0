@@ -3,7 +3,9 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
+
 const Home: NextPage = () => {
+  //return default
   return (
     <div className={styles.container}>
       <Head>
@@ -30,7 +32,7 @@ const Home: NextPage = () => {
 
           <a href="https://nextjs.org/learn" className={styles.card}>
             <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
+            <p>Learn about Next.js in an interactive1 course with quizzes!</p>
           </a>
 
           <a
@@ -62,7 +64,7 @@ const Home: NextPage = () => {
           Powered by{' '}
           <span className={styles.logo}>
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
+          </span
         </a>
       </footer>
     </div>
