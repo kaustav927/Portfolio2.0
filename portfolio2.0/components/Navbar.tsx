@@ -11,9 +11,9 @@ function NavLink({to, children}) {
 //https://dev.to/dmuraco3/responsive-global-navbar-in-nextjs-with-tailwindcss-45p4
 function MobileNav({open, setOpen}) {
     return (
-        <div className={`absolute top-0 left-0 h-screen w-screen bg-cool-white transform ${open ? "-translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out filter  `}>
+        <div className={`absolute top-0 left-0 h-screen w-screen z-50 bg-cool-white transform ${open ? "-translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out filter  `}>
             <div className="flex items-center justify-center filter bg-cool-white h-20"> {/*logo container*/}
-                <a className="text-xl font-cd-regular " href="/">Kaustav Sharma</a>
+                <a className="text-xl font-cd-regular sm:text-xs" href="/">@kaust_av</a>
             </div>
             <div className="flex flex-col ml-4">
                 <a className="text-sm font-medium my-4" href="#about" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}>
@@ -40,7 +40,7 @@ export default function Navbar() {
             <MobileNav open={open} setOpen={setOpen}/>
 
             <div className="w-4/12 flex items-center">
-                <a className="text-2xl font-cd-regular py-2 " href="/">Kaustav Sharma</a>
+                <a className="text-2xl font-cd-regular py-2 " href="/">@kaust_av</a>
             </div>
             <div className="w-9/12 flex justify-end items-center">
 
