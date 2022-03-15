@@ -8,7 +8,7 @@ import Projects from './Projects'
 
 const Home: NextPage = () => {
   return (
-    <body className="bg-cool-white h-screen overflow-hidden body">
+    <body className="bg-cool-white h-screen body">
       <div className="text-black">
       <Head>
         <title>Kaustav Sharma</title>

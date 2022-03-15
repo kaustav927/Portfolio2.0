@@ -63,9 +63,9 @@ export default function Navbar() {
                     <NavLink to="#contact">
                         <h1 className="text-sm  py-2 px-4">Contact</h1>
                     </NavLink>
-                    <NavLink to="https://drive.google.com/file/d/18XyT6wPX2IWdWv0VCqOtwW7ZXYSuAm_g/view?usp=sharing">
+                    <a href="https://drive.google.com/file/d/18XyT6wPX2IWdWv0VCqOtwW7ZXYSuAm_g/view?usp=sharing" target="_blank" rel="noreferrer noopener">
                         <h1 className="text-lg bg-slate-800 py-2 px-4 rounded text-white hover:bg-slate-800/3">Resume</h1>
-                    </NavLink>
+                    </a>
                 </div>
 
 
