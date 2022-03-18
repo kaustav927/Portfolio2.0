@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import Link from 'next/link'
 
 function NavLink({ to, children }) {
     return <a href={to} className={`mx-4`}>
@@ -14,7 +14,7 @@ function MobileNav({ open, setOpen }) {
     return (
         <div className={`absolute top-0 left-0 h-screen w-screen z-50 bg-cool-white transform ${open ? "-translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out filter  `}>
             <div className="flex items-center justify-center filter bg-cool-white h-20"> {/*logo container*/}
-                <a className="text-xl font-cd-regular " href="/">@kaust_av</a>
+                <a className="text-2xl font-cd-regular " href="/">@kaust_av</a>
             </div>
             <div className="flex flex-col ml-4">
                 <a className="text-sm font-medium my-4" href="#about" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}>
@@ -26,8 +26,8 @@ function MobileNav({ open, setOpen }) {
                 <a className="text-sm font-normal my-4" href="#contact" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}>
                     Contact
                 </a>
-                <a className="text-sm font-normal my-4 bg-slate-800 py-2 px-4 rounded text-white mx-auto" href="https://drive.google.com/file/d/18XyT6wPX2IWdWv0VCqOtwW7ZXYSuAm_g/view?usp=sharing" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}>
-                    Resume
+                <a className="text-sm font-normal" href="https://drive.google.com/file/d/18XyT6wPX2IWdWv0VCqOtwW7ZXYSuAm_g/view?usp=sharing" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}>
+                <h1 className="text-sm my-4 font-semibold">Resume</h1>
                 </a>
             </div>
         </div>
@@ -37,12 +37,15 @@ function MobileNav({ open, setOpen }) {
 export default function Navbar() {
     const [open, setOpen] = useState(false)
     return (
+        
         <nav className="font-cd-regular flex container mx-auto justify-between py-4 my-8 h-20 items-center px-8 md:px-14 lg-px24 w-full">
             <MobileNav open={open} setOpen={setOpen} />
 
             <div className="w-4/12 flex items-center">
                 <a className="text-2xl font-cd-regular py-2 " href="/">@kaust_av</a>
             </div>
+
+
             <div className="w-9/12 flex justify-end items-center">
 
                 <div className="z-50 flex relative w-8 h-8 flex-col justify-between items-center md:hidden" onClick={() => {
@@ -56,17 +59,20 @@ export default function Navbar() {
 
                 <div className="hidden md:flex">
                     <NavLink to="#about">
-                        <h1 className="text-sm  py-2 px-4">About</h1>
+                        <h1 className="text-sm  py-2 px-4 font-regular">About</h1>
                     </NavLink>
                     <NavLink to="#projects">
-                        <h1 className="text-sm  py-2 px-4">Projects</h1>
+                        <h1 className="text-sm  py-2 px-4 font-regular">Projects</h1>
                     </NavLink>
                     <NavLink to="#contact">
-                        <h1 className="text-sm  py-2 px-4">Contact</h1>
+                        <h1 className="text-sm  py-2 px-4 font-regular">Contact</h1>
                     </NavLink>
 
-                    <Link href="https://drive.google.com/file/d/18XyT6wPX2IWdWv0VCqOtwW7ZXYSuAm_g/view?usp=sharing" target="_blank" rel="noreferrer noopener">
-                        <h1 className="text-lg bg-slate-800 py-2 px-4 rounded text-white hover:bg-slate-800/3">Resume</h1>
+                   
+                    <Link href='https://drive.google.com/file/d/18XyT6wPX2IWdWv0VCqOtwW7ZXYSuAm_g/view?usp=sharing'>
+                        <a target="_blank">
+                            <h1 className="text-sm py-2 px-4 font-semibold">Resume</h1>
+                        </a>
                     </Link>
                 </div>
 
@@ -76,3 +82,4 @@ export default function Navbar() {
     )
 
 }
+
