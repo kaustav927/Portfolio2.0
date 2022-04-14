@@ -5,22 +5,33 @@ import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
 import Footer from '../components/Footer'
 import Projects from './Projects'
-
+import {Parallax, ParallaxLayer} from '@react-spring/parallax'
 const Home: NextPage = () => {
   return (
-    <body className="bg-cool-white h-screen body">
-      <div className="text-black">
+    <body className="bg-cool-white body text-black">
+      <div>
       <Head>
         <title>Kaustav Sharma</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Navbar/>
-      <Hero/>
-      <Projects/>
-    
+      <Parallax pages={2}>
+      
+        <ParallaxLayer>
+        <Navbar/>
+          <Hero/>
+        </ParallaxLayer>
 
+        <ParallaxLayer offset={1}>
+          <Projects/>
+        </ParallaxLayer>
 
+        <ParallaxLayer>
+          
+        </ParallaxLayer>
+      </Parallax>
+
+ 
      </div>
     </body>
    
