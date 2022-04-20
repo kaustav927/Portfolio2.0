@@ -1,7 +1,8 @@
-import React from "react";
+import  React, {useState} from "react";
 import {FaGithub} from 'react-icons/fa';
 import {SiDevpost} from 'react-icons/si';
 import Link from 'next/link'
+
 const projectData = [
   {
     name: "LPM",
@@ -46,6 +47,12 @@ const projectData = [
 ];
 
 function Projects() {
+  const [selected,setSelected]=useState(null);
+
+  const toggle = (i) =>{
+    selected === i ? setSelected(null) : setSelected(i);
+  }
+
   return (
     <div className="container mt-10 flex justify-between items-center mx-auto p-8 md:px-14 lg:px-24 w-full h-full">
       <section className="w-full">
@@ -53,9 +60,10 @@ function Projects() {
           My work
         </h2>
 
-        {projectData.map((project) => (
-          <div key={project.id} className="flex flex-col gap-6 mt-6 py-4">
-            <div className="text-2xl font-cd-bold">{project.name}</div>
+        {projectData.map((project,i) => (
+          <div key={project.id} className="flex flex-col gap-6 mt-6 py-4 bg-slate-600 cursor-pointer">
+            <div className="text-2xl font-cd-bold" onClick={()=>toggle(i)}>{project.name}</div>
+            
             <div className="w-2/3 text-xl font-cd-regular">{project.description}</div>
               <span className="flex">
                 {

@@ -40,9 +40,7 @@ export default function Navbar() {
                     <NavLink to="#about" >
                         <h1 className="text-sm font-medium my-4"  onClick={() => setTimeout(() => { setOpen(!open) }, 100)}>About</h1>
                     </NavLink>
-                    <a className="text-sm font-medium my-4" href="#about" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}>
-                        About
-                    </a>
+                    
                     <a className="text-sm font-normal my-4" href="#projects" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}>
                         Projects
                     </a>
