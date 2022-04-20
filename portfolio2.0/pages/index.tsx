@@ -18,7 +18,7 @@ const Home: NextPage = () => {
       <Parallax pages={2}>
       
         <ParallaxLayer>
-        <Navbar/>
+          <Navbar/>
           <Hero/>
         </ParallaxLayer>
 

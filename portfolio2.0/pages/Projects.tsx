@@ -1,30 +1,67 @@
+import React from "react";
 
-import React from 'react'
+const projectData = [
+  {
+    name: "LPM",
+    id: "1",
+    timeLine: "Dec 2020-Jan 2021",
+    description: "",
+    githubLink: "",
+    websiteLink: "",
+    Tools: ["React.js", "Vue.js", "Vercel", "Flask"],
+  },
+
+  {
+    name: "LPM1",
+    id: "2",
+    timeLine: "Dec 2020-Jan 2021",
+    description: "",
+    githubLink: "",
+    websiteLink: "",
+    Tools: ["React.js", "Vue.js", "Vercel", "Flask"],
+  },
+
+  {
+    name: "LPM2",
+    id: "3",
+    timeLine: "Dec 2020-Jan 2021",
+    description: "",
+    githubLink: "",
+    websiteLink: "",
+    Tools: ["React.js", "Vue.js", "Vercel", "Flask"],
+  },
+];
 
 function Projects() {
   return (
-    <div>
-      <div className="container mt-64 flex justify-between items-center mx-auto p-8 md:px-14 lg:px-24 w-full">
-			<section className="w-full">
-				<h2 id="work" className="text-2xl font-cd-bold">My work</h2>
-				<p className="font-cd-regular">I’ve had the pleasure of working with multiple Fortune 500 companies, designing and implementing both frontend and backend.</p>
+    <div className="container mt-10 flex justify-between items-center mx-auto p-8 md:px-14 lg:px-24 w-full">
+      <section className="w-full">
+        <h2 id="work" className="text-4xl font-cd-bold">
+          My work
+        </h2>
 
-				<div className="flex flex-col items-center gap-6 mt-6">
-                    <div className ="w-full bg-nav h-36 lg:h-72 object-cover">image</div>
-                    <div className ="w-full bg-nav h-36 lg:h-72 object-cover">image</div>
-                    <div className ="w-full bg-nav h-36 lg:h-72 object-cover">image</div>
-                    <div className ="w-full bg-nav h-36 lg:h-72 object-cover">image</div>
-                    <div className ="w-full bg-nav h-36 lg:h-72 object-cover">image</div>
-                    <div className ="w-full bg-nav h-36 lg:h-72 object-cover">image</div>
-                    <div className ="w-full bg-nav h-36 lg:h-72 object-cover">image</div>
-                    <div className ="w-full bg-nav h-36 lg:h-72 object-cover">image</div>
-
-					<div className="w-full hidden md:block md:col-span-2 lg:col-span-1 bg-nav h-36 lg:h-72 object-cover">random </div>
-				</div>
-			</section>
-		</div>
+        {projectData.map((project) => (
+          <div key={project.id} className="flex flex-col gap-6 mt-6 font-cd-bold text-2xl">
+            {project.name}
+            {project.description}
+            {project.githubLink}
+          </div>
+        ))}
+      </section>
     </div>
-  )
+  );
 }
 
-export default Projects
+{
+  /* <div className="flex flex-col items-center gap-6 mt-6">
+<div className ="w-full bg-nav h-36 lg:h-72 object-cover">image</div>
+<div className ="w-full bg-nav h-36 lg:h-72 object-cover">image</div>
+<div className ="w-full bg-nav h-36 lg:h-72 object-cover">image</div>
+<div className ="w-full bg-nav h-36 lg:h-72 object-cover">image</div>
+<div className ="w-full bg-nav h-36 lg:h-72 object-cover">image</div>
+<div className ="w-full bg-nav h-36 lg:h-72 object-cover">image</div>
+<div className ="w-full bg-nav h-36 lg:h-72 object-cover">image</div>
+<div className ="w-full bg-nav h-36 lg:h-72 object-cover">image</div>
+<div className="w-full hidden md:block md:col-span-2 lg:col-span-1 bg-nav h-36 lg:h-72 object-cover">random </div> */
+}
+export default Projects;

@@ -22,9 +22,12 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
-, "components/Navbar.js", "components/Navbar.jsx"  ],
+    "**/*.tsx",
+    "components/Navbar.js",
+    "components/Navbar.jsx"
+  ],
   "exclude": [
     "node_modules"
-  ]
+  ],
+  "resolveJsonModule": true,
 }
