@@ -1,11 +1,11 @@
 import type { NextPage } from 'next'
+import React from "react";
 import Head from 'next/head'
-import Image from 'next/image'
 import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
-import Footer from '../components/Footer'
+
 import Projects from './Projects'
-import {Parallax, ParallaxLayer} from '@react-spring/parallax'
+//import {Parallax, ParallaxLayer} from '@react-spring/parallax'
 const Home: NextPage = () => {
   return (
     <body className="bg-cool-white body text-black">
@@ -14,24 +14,9 @@ const Home: NextPage = () => {
         <title>Kaustav Sharma</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <Parallax pages={2}>
-      
-        <ParallaxLayer>
-          <Navbar/>
-          <Hero/>
-        </ParallaxLayer>
-
-        <ParallaxLayer offset={1}>
-          <Projects/>
-        </ParallaxLayer>
-
-        <ParallaxLayer>
-          
-        </ParallaxLayer>
-      </Parallax>
-
- 
+      <Navbar/>
+      <Hero/>  
+      <Projects/>
      </div>
     </body>
    
