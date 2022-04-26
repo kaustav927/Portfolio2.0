@@ -50,7 +50,7 @@ function Projects() {
   const [selected,setSelected]=useState(null);
 
   const toggle = (i) =>{
-    selected === i ? setSelected(null) : setSelected(i);
+    selected ===i ? setSelected(null) : setSelected(i);
   }
 
   return (
