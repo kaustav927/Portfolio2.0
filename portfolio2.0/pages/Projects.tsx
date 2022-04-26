@@ -56,20 +56,20 @@ function Projects() {
   return (
     <div className="container mt-10 flex justify-between items-center w-10/12 mx-auto px md:px-14 lg:px-24 h-full">
       <section className="w-full">
-        <h2 id="work" className="text-4xl font-cd-bold">
+        <h2 id="work" className="text-4xl font-cd-bold dark:text-white">
           My work
         </h2>
 
         {projectData.map((project,i) => (
           <div key={project.id} className="flex flex-col  mt-6 py-4 cursor-pointer">
-            <div className="text-2xl font-cd-bold" onClick={()=>toggle(i)}>{project.name}</div>
+            <div className="text-2xl font-cd-bold dark:text-white" onClick={()=>toggle(i)}>{project.name}</div>
             
-            <div className="w-2/3 text-xl font-cd-regular">{project.description}</div>
+            <div className="w-2/3 text-xl font-cd-regular dark:text-white">{project.description}</div>
               <span className="flex">
                 {
                 <Link href={project.githubLink}>
                     <a target="_blank">
-                        <FaGithub className="text-2xl mr-3"/>
+                        <FaGithub className="text-2xl mr-3 dark:text-white"/>
                     </a>
                 </Link>
                 } 
@@ -77,7 +77,7 @@ function Projects() {
                 { project.devpostLink ? (
                 <Link href={project.devpostLink}>
                     <a target="_blank">
-                        <SiDevpost className="text-2xl ml-3"/>
+                        <SiDevpost className="text-2xl ml-3 dark:text-white"/>
                     </a>
                 </Link>
                 ) : null
