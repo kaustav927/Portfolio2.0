@@ -59,19 +59,16 @@ export default function Navbar() {
                     setOpen(!open)
                 }}>
                     {/* hamburger button */}
-                    <span className={`h-1 w-full bg-black dark:bg-white rounded-lg transform transition duration-300 ease-in-out ${open ? "rotate-45 translate-y-3.5" : ""}`} />
-                    <span className={`h-1 w-full bg-black dark:bg-white rounded-lg transition-all duration-300 ease-in-out ${open ? "w-0" : "w-full"}`} />
-                    <span className={`h-1 w-full bg-black dark:bg-white rounded-lg transform transition duration-300 ease-in-out ${open ? "-rotate-45 -translate-y-3.5" : ""}`} />
+                    <span className={`h-1 w-full bg-black dark:bg-white transform transition duration-300 ease-in-out ${open ? "rotate-45 translate-y-3.5" : ""}`} />
+                    <span className={`h-1 w-full bg-black dark:bg-white transition-all duration-300 ease-in-out ${open ? "w-0" : "w-full"}`} />
+                    <span className={`h-1 w-full bg-black dark:bg-white transform transition duration-300 ease-in-out ${open ? "-rotate-45 -translate-y-3.5" : ""}`} />
                 </div>
 
                 <div className="hidden md:flex">
                     <h1 className="text-xl mt-1.5 px-2">
                         {theme==='light' ? <BsFillMoonFill className="text-slate-800" onClick={()=>setTheme(theme === 'light'? 'dark':'light')}/> : <BsFillSunFill className="text-cool-white" onClick={()=>setTheme(theme === 'light'? 'dark':'light')}/>}
                     </h1>
-                    {/* <button className="bg-white dark:bg-black dark: text-white" onClick={()=>setTheme(theme === 'light'? 'dark':'light')}>
-                        Toggle to: {theme === 'light' ? 'dark' : 'light'}
-                    </button> */}
-
+               
                     <NavLink to="#about">
                         <h1 className="text-sm font-regular px-2 dark:text-white">About</h1>
                     </NavLink>

@@ -3,7 +3,7 @@ import React from "react";
 import Head from 'next/head'
 import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
-
+import Contact from '../components/Contact'
 import Projects from './Projects'
 //import {Parallax, ParallaxLayer} from '@react-spring/parallax'
 const Home: NextPage = () => {
@@ -20,6 +20,7 @@ const Home: NextPage = () => {
       <Navbar  /> 
       <Hero/>  
       <Projects/>
+      <Contact/>
      
     </body>
    
