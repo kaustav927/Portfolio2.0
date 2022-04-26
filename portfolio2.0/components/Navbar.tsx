@@ -25,22 +25,20 @@ export default function Navbar() {
     const [open, setOpen] = useState<boolean>(false)
     return (
         
-        <nav className="font-cd-regular flex container mx-auto justify-between py-4 my-8 h-20 items-center px-8 md:px-14 lg-px24 w-full">
-
+        <nav className="z-50 font-cd-regular h-20 sticky top-0">
             {/* Moble Nav */}
-            <div className={`absolute top-0 left-0 h-screen w-screen z-50 bg-cool-white transform ${open ? "-translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out filter  `}>
-                <div className="flex items-center justify-center filter bg-cool-white h-20"> 
+            <div className={`absolute top-0 left-0 right-0 h-screen w-screen z-50 bg-cool-white transform ${open ? "-translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out filter  `}>
+                <div className="flex pl-4 items-center justify-start filter bg-cool-white h-20"> 
                     {/*logo container*/}
                     <Link href="/">
-                    <a className="text-2xl font-cd-regular ">@kaust_av</a>
+                         <a className="text-2xl font-cd-regular ">@kaust_av</a>
                     </Link>
                 
                 </div>
                 <div className="flex flex-col ml-4">
-                    <NavLink to="#about" >
-                        <h1 className="text-sm font-medium my-4"  onClick={() => setTimeout(() => { setOpen(!open) }, 100)}>About</h1>
-                    </NavLink>
-                    
+                    <a className="text-sm font-normal my-4" href="#about" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}>
+                        About
+                    </a>
                     <a className="text-sm font-normal my-4" href="#projects" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}>
                         Projects
                     </a>
@@ -52,16 +50,19 @@ export default function Navbar() {
                     </a>
                 </div>
             </div>
+
+
         {/* Desktop Nav */}
-            <div className="w-4/12 flex items-center">
+        <div className="container mt-10 flex justify-between items-center w-screen h-screen mx-auto px md:px-14 lg:px-24">
+            <div className="w-6/12 flex items-center">
                 <Link href="#home">
-                    <h1 className="text-2xl font-cd-regular ">@kaust_av</h1>
+                    <h1 className="text-2xl font-cd-regular ml-8">@kaust_av</h1>
                 </Link>
             </div>
 
-            <div className="w-9/12 flex justify-end items-center">
+            <div className="w-6/12 flex justify-end items-center">
 
-                <div className="z-50 flex relative w-8 h-8 flex-col justify-between items-center md:hidden" onClick={() => {
+                <div className="z-50 flex relative w-8 h-8 flex-col justify-between items-center mr-8 md:hidden" onClick={() => {
                     setOpen(!open)
                 }}>
                     {/* hamburger button */}
@@ -72,25 +73,22 @@ export default function Navbar() {
 
                 <div className="hidden md:flex">
                     <NavLink to="#about">
-                        <h1 className="text-sm  py-2 px-4 font-regular">About</h1>
+                        <h1 className="text-md  font-regular">About</h1>
                     </NavLink>
                     <NavLink to="#projects">
-                        <h1 className="text-sm  py-2 px-4 font-regular">Projects</h1>
+                        <h1 className="text-sm   font-regular">Projects</h1>
                     </NavLink>
                     <NavLink to="#contact">
-                        <h1 className="text-sm  py-2 px-4 font-regular">Contact</h1>
+                        <h1 className="text-sm    font-regular">Contact</h1>
                     </NavLink>
-
-                    
                     <Link href='https://drive.google.com/file/d/18XyT6wPX2IWdWv0VCqOtwW7ZXYSuAm_g/view?usp=sharing'>
                         <a target="_blank">
-                            <h1 className="text-sm py-2 px-4 font-semibold">Resume</h1>
+                            <h1 className="text-sm font-semibold">Resume</h1>
                         </a>
                     </Link>
                 </div>
-
-
             </div>
+        </div>
         </nav>
     )
 

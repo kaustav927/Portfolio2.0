@@ -54,14 +54,14 @@ function Projects() {
   }
 
   return (
-    <div className="container mt-10 flex justify-between items-center mx-auto p-8 md:px-14 lg:px-24 w-full h-full">
+    <div className="container mt-10 flex justify-between items-center w-10/12 mx-auto px md:px-14 lg:px-24 h-full">
       <section className="w-full">
         <h2 id="work" className="text-4xl font-cd-bold">
           My work
         </h2>
 
         {projectData.map((project,i) => (
-          <div key={project.id} className="flex flex-col gap-6 mt-6 py-4 bg-slate-600 cursor-pointer">
+          <div key={project.id} className="flex flex-col  mt-6 py-4 cursor-pointer">
             <div className="text-2xl font-cd-bold" onClick={()=>toggle(i)}>{project.name}</div>
             
             <div className="w-2/3 text-xl font-cd-regular">{project.description}</div>
@@ -89,6 +89,4 @@ function Projects() {
     </div>
   );
 }
-
-
 export default Projects;

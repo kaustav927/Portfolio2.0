@@ -8,16 +8,17 @@ import Projects from './Projects'
 //import {Parallax, ParallaxLayer} from '@react-spring/parallax'
 const Home: NextPage = () => {
   return (
-    <body className="bg-cool-white body text-black">
-      <div>
+    <body className="bg-cool-white body text-black ">
+      
       <Head>
         <title>Kaustav Sharma</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar/>
+      
+      <Navbar /> 
       <Hero/>  
       <Projects/>
-     </div>
+     
     </body>
    
   )
