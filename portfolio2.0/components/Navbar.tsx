@@ -1,16 +1,13 @@
 /* eslint-disable @next/next/link-passhref */
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
+
 import PropTypes, { InferProps } from "prop-types";
 import {useTheme} from 'next-themes'  
 import {BsFillSunFill,BsFillMoonFill} from 'react-icons/bs'
 
 
-function NavLink({to, children}) {
-    return <a href={to} className={`mx-4`}>
-        {children}
-    </a>
-}
+
 
 function MobileNav({open, setOpen, theme,setTheme}) {
     return (
@@ -22,20 +19,20 @@ function MobileNav({open, setOpen, theme,setTheme}) {
                     <h1 className="text-2xl mt-1.5 mx-auto">
                         {theme==='light' ? <BsFillMoonFill className="text-slate-800" onClick={()=>setTheme(theme === 'light'? 'dark':'light')}/> : <BsFillSunFill className="text-cool-white" onClick={()=>setTheme(theme === 'light'? 'dark':'light')}/>}
                     </h1>
-                    <NavLink to="#about">
+                    <Link href="/about">
                         <h1 className="text-md font-cd-semibold dark:text-white py-4" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}>About</h1>
-                    </NavLink>
-                    <NavLink to="#projects">
+                    </Link>
+                    <Link href="/projects">
                         <h1 className="text-sm font-cd-semibold dark:text-white py-4" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}>Projects</h1>
-                    </NavLink>
-                    <NavLink to="#contact">
+                    </Link>
+                    <Link href="/contact">
                         <h1 className="text-sm font-cd-semibold dark:text-white py-4" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}>Contact</h1>
-                    </NavLink>
-                    <NavLink to=''>
+                    </Link>
+                    <Link href="https://drive.google.com/file/d/18XyT6wPX2IWdWv0VCqOtwW7ZXYSuAm_g/view?usp=sharing">
                         <a href="https://drive.google.com/file/d/18XyT6wPX2IWdWv0VCqOtwW7ZXYSuAm_g/view?usp=sharing" target="_blank" rel="noreferrer">
                             <h1 className="text-sm font-cd-semibold dark:text-white py-4" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}>Resume</h1>
                         </a>
-                    </NavLink>
+                    </Link>
             </div>  
         </div>
     )
@@ -46,7 +43,10 @@ export default function Navbar() {
     const [open, setOpen] = useState(false)
 
     return (
-        <nav className="z-50 flex sticky top-0 w-screen h-20 filter px-8 bg-cool-white/70 dark:bg-slate-800/70 backdrop-blur-md py-4 items-center container justify-between mx-auto px md:px-14 lg:px-24">
+        <div className="z-50 sticky top-0 w-screen flex flex-col h-20 items-center filter bg-cool-white/70 dark:bg-slate-800/70 backdrop-blur-md">
+
+        
+        <nav className=" flex items-center py-4 container w-10/12 md:w-10/12 lg:w-8/12">
             {open?<MobileNav open={open} setOpen={setOpen} theme={theme} setTheme={setTheme}/>:null}
 
             <div className="w-3/12 flex items-center">
@@ -54,7 +54,6 @@ export default function Navbar() {
             </div>
             
             <div className="w-9/12 flex justify-end items-center font-cd-regular">
-
                 <div className="z-50 flex relative w-8 h-8 flex-col justify-between items-center md:hidden" onClick={() => {
                     setOpen(!open)
                 }}>
@@ -69,15 +68,15 @@ export default function Navbar() {
                         {theme==='light' ? <BsFillMoonFill className="text-slate-800" onClick={()=>setTheme(theme === 'light'? 'dark':'light')}/> : <BsFillSunFill className="text-cool-white" onClick={()=>setTheme(theme === 'light'? 'dark':'light')}/>}
                     </h1>
                
-                    <NavLink to="#about">
+                    <Link href="/about">
                         <h1 className="text-sm font-regular px-2 dark:text-white">About</h1>
-                    </NavLink>
-                    <NavLink to="#projects">
+                    </Link>
+                    <Link href="/projects">
                         <h1 className="text-sm font-regular px-2 dark:text-white">Projects</h1>
-                    </NavLink>
-                    <NavLink to="#contact">
+                    </Link>
+                    <Link href="/contact">
                         <h1 className="text-sm font-regular px-2 dark:text-white">Contact</h1>
-                    </NavLink>
+                    </Link>
                     <Link href='https://drive.google.com/file/d/18XyT6wPX2IWdWv0VCqOtwW7ZXYSuAm_g/view?usp=sharing'>
                         <a target="_blank">
                             <h1 className="text-sm font-semibold px-2 dark:text-white">Resume</h1>
@@ -86,5 +85,6 @@ export default function Navbar() {
                 </div>
             </div>
         </nav>
+        </div>
     )
 }

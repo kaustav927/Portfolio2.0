@@ -1,7 +1,9 @@
 import React from 'react'
-
+import Navbar from '../components/Navbar'
 function Contact() {
   return (
+    <>
+    <Navbar/>
     <div className="container mt-10 flex justify-between items-center w-10/12 mx-auto px md:px-14 lg:px-24 h-full">
       <section className="w-full">
         <h2 id="work" className="text-4xl font-cd-bold dark:text-white">
@@ -20,7 +22,7 @@ function Contact() {
                     <textarea
                       placeholder="Enter your password description"
                       className="bg-gray-200 shadow-inner rounded p-2 my-3 flex-1 w-3/4 h-52"
-                      type="string"
+                      type="text"
                     />
                   </form>
         </div>
@@ -29,6 +31,7 @@ function Contact() {
         
       </section>
     </div>
+    </>
   )
 }
 

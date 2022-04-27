@@ -3,24 +3,25 @@ import React from "react";
 import Head from 'next/head'
 import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
-import Contact from '../components/Contact'
-import Projects from './Projects'
+import BestProjects from '../components/BestProjects'
 //import {Parallax, ParallaxLayer} from '@react-spring/parallax'
 const Home: NextPage = () => {
   
   
   return (
-    <body className="bg-cool-white dark:bg-slate-800 text-black flex flex-col items-center content-center">
+    <body className="bg-cool-white dark:bg-slate-800 text-black">
       
       <Head>
         <title>Kaustav Sharma</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <div className="flex flex-col content-center items-center">
+        <Navbar  /> 
+        <Hero/>  
+        <BestProjects/>
+
+      </div>
       
-      <Navbar  /> 
-      <Hero/>  
-      <Projects/>
-      <Contact/>
      
     </body>
    
