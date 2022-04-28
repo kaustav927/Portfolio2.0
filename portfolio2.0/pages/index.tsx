@@ -4,6 +4,7 @@ import Head from 'next/head'
 import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
 import BestProjects from '../components/BestProjects'
+import Footer from '../components/Footer'
 //import {Parallax, ParallaxLayer} from '@react-spring/parallax'
 const Home: NextPage = () => {
   
@@ -19,7 +20,7 @@ const Home: NextPage = () => {
         <Navbar  /> 
         <Hero/>  
         <BestProjects/>
-
+        <Footer/>
       </div>
       
      

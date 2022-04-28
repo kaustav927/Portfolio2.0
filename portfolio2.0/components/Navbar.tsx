@@ -43,7 +43,7 @@ export default function Navbar() {
     const [open, setOpen] = useState(false)
 
     return (
-        <div className="z-50 sticky top-0 w-screen flex flex-col h-20 items-center filter bg-cool-white/70 dark:bg-slate-800/70 backdrop-blur-md">
+        <div className="z-50 sticky top-0 w-screen flex flex-col h-20 items-center filter bg-cool-white/70 dark:bg-slate-800/70 backdrop-blur-md overflow-x-hidden">
 
         
         <nav className=" flex items-center py-4 container w-10/12 md:w-10/12 lg:w-8/12">
