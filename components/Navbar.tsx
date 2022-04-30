@@ -19,8 +19,8 @@ function MobileNav({open,setOpen,theme,setTheme}:mobleNavProps) {
         <div className={`absolute top-0 left-0 h-screen w-screen bg-cool-white/70 dark:bg-slate-800/70 bg-blur-md transform ${open ? "-translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out filter  `}>
             <div className="flex items-center justify-center filter  bg-cool-white dark:bg-slate-800 h-20"> {/*logo container*/}
                 
-            <Link href="/">
-                <a className="text-xl font-cd-semibold dark:text-white">@kaust_av</a>
+                <Link href="/">
+                 <a className="text-xl font-cd-semibold dark:text-white">@kaust_av</a>
                 </Link>
             </div>
             <div className="flex flex-col ml-4">
