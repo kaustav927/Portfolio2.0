@@ -6,10 +6,13 @@ import {ProjectData} from '../components/ProjectData'
 import {FiPlus, FiMinus} from 'react-icons/fi';
 
 const CurrentProjects = () => {
+  interface selectedData {
+    index : number | null | any
+  }
     const projectData = ProjectData
-    const [selected,setSelected]=useState(null);
+    const [selected,setSelected]=useState<selectedData | any | null>(null);
     
-  
+
     const toggle = (index:number) =>{
       selected === index ? setSelected(null) : setSelected(index);
     }
@@ -21,7 +24,7 @@ const CurrentProjects = () => {
             My work
           </h2>
   
-          {projectData.map((project,index) => (
+          {projectData.map((project,index:any) => (
             <div key={project.id} className="flex flex-col  mt-6 py-4 cursor-pointer">
   
               <div className="text-2xl font-cd-bold dark:text-white" onClick={()=>toggle(index)} key={index}>

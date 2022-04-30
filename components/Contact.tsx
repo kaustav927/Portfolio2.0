@@ -22,7 +22,7 @@ function Contact() {
                     <textarea
                       placeholder="Enter your password description"
                       className="bg-gray-200 shadow-inner rounded p-2 my-3 flex-1 w-3/4 h-52"
-                      type="text"
+                      
                     />
                   </form>
         </div>

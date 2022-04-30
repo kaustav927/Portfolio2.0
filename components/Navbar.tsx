@@ -6,14 +6,22 @@ import PropTypes, { InferProps } from "prop-types";
 import {useTheme} from 'next-themes'  
 import {BsFillSunFill,BsFillMoonFill} from 'react-icons/bs'
 
+interface mobleNavProps{
+    open:boolean
+    setOpen:Function
+    theme:string
+    setTheme:Function
+}
 
 
-
-function MobileNav({open, setOpen, theme,setTheme}) {
+function MobileNav({open,setOpen,theme,setTheme}:mobleNavProps) {
     return (
         <div className={`absolute top-0 left-0 h-screen w-screen bg-cool-white/70 dark:bg-slate-800/70 bg-blur-md transform ${open ? "-translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out filter  `}>
             <div className="flex items-center justify-center filter  bg-cool-white dark:bg-slate-800 h-20"> {/*logo container*/}
-                <a className="text-xl font-cd-semibold dark:text-white" href="/">@kaust_av</a>
+                
+            <Link href="/">
+                <a className="text-xl font-cd-semibold dark:text-white">@kaust_av</a>
+                </Link>
             </div>
             <div className="flex flex-col ml-4">
                     <h1 className="text-2xl mt-1.5 mx-auto">
@@ -50,7 +58,9 @@ export default function Navbar() {
             {open?<MobileNav open={open} setOpen={setOpen} theme={theme} setTheme={setTheme}/>:null}
 
             <div className="w-3/12 flex items-center">
-                <a className="text-2xl font-cd-regular md:text-2xl lg:text-2xl dark:text-white" href="/">@kaust_av</a>
+                <Link href="/">
+                <a className="text-2xl font-cd-regular md:text-2xl lg:text-2xl dark:text-white">@kaust_av</a>
+                </Link>
             </div>
             
             <div className="w-9/12 flex justify-end items-center font-cd-regular">
