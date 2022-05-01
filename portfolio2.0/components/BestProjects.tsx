@@ -20,7 +20,7 @@ const BestProjects = () => {
     websiteLink: string;
     Tools: string[];
   }
-  let index: any = null;
+  
 
   const projectData = ProjectData;
   const [selected, setSelected] = useState<selectedData | any | null>(null);

@@ -31,34 +31,7 @@ function contact() {
         </div>
       </div>
     </body>
-    // <body className="bg-cool-white dark:bg-slate-800 text-black flex flex-col items-center content-center">
-
-    // <Navbar/>
-    //   <section className="w-full">
-    //     <h2 id="work" className="text-4xl font-cd-bold dark:text-white">
-    //       My work
-    //     </h2>
-
-    // <div >
-    //   <form>Name</form>
-    //   <input
-    //               className="bg-gray-200 shadow-inner rounded p-2 flex-1 outline-none"
-    //               type="email"
-    //               aria-label="email"
-    //               placeholder="Enter Account Username of Email"
-    //   />
-    //   <h1 className="text-sm">Description</h1>
-    //           <form className="">
-    //             <textarea
-    //               placeholder="Enter your password description"
-    //               className="bg-gray-200 shadow-inner rounded p-2 my-3 flex-1 w-3/4 h-52"
-    //               type="text"
-    //             />
-    //           </form>
-    // </div>
-    //   </section>
-
-    // </body>
+    
   );
 }
 
