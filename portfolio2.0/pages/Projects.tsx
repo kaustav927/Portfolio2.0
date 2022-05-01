@@ -28,4 +28,6 @@ const projects: NextPage = () => {
   );
 };
 
+
 export default projects;
+

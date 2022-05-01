@@ -74,3 +74,4 @@ const UpcomingProjects = () => {
 };
 
 export default UpcomingProjects;
+

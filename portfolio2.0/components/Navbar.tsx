@@ -39,7 +39,9 @@ function MobileNav({ open, setOpen, theme, setTheme }: mobleNavProps) {
             />
           )}
         </h1>
+
         <Link href="/about" passHref>
+
           <h1
             className="text-md font-cd-semibold dark:text-white py-4"
             onClick={() =>
@@ -51,6 +53,7 @@ function MobileNav({ open, setOpen, theme, setTheme }: mobleNavProps) {
             About
           </h1>
         </Link>
+
         <Link href="/projects" passHref>
           <h1
             className="text-sm font-cd-semibold dark:text-white py-4"
@@ -64,6 +67,7 @@ function MobileNav({ open, setOpen, theme, setTheme }: mobleNavProps) {
           </h1>
         </Link>
         <Link href="/contact" passHref>
+
           <h1
             className="text-sm font-cd-semibold dark:text-white py-4"
             onClick={() =>
@@ -162,17 +166,23 @@ export default function Navbar() {
               )}
             </h1>
 
+
             <Link href="/about" passHref>
               <h1 className="text-sm font-regular px-2 dark:text-white">
                 About
               </h1>
             </Link>
+
             <Link href="/projects" passHref>
+
+
               <h1 className="text-sm font-regular px-2 dark:text-white">
                 Projects
               </h1>
             </Link>
+
             <Link href="/contact" passHref>
+
               <h1 className="text-sm font-regular px-2 dark:text-white">
                 Contact
               </h1>
@@ -189,4 +199,5 @@ export default function Navbar() {
       </nav>
     </div>
   );
+
 }
