@@ -17,13 +17,11 @@ function MobileNav({ open, setOpen, theme, setTheme }: mobleNavProps) {
     <div
       className={`absolute top-0 left-0 h-screen w-screen bg-cool-white/70 dark:bg-slate-800/70 bg-blur-md transform ${
         open ? "-translate-x-0" : "-translate-x-full"
-      } transition-transform duration-300 ease-in-out filter  `}
+      } transition-transform duration-300 ease-in-out filter  lg:hidden`}
     >
       <div className="flex items-center justify-center filter  bg-cool-white dark:bg-slate-800 h-20">
         {/*logo container*/}
-        <Link href="/">
-          <a className="text-xl font-cd-semibold dark:text-white">@kaust_av</a>
-        </Link>
+        
       </div>
       <div className="flex flex-col ml-4">
         <h1 className="text-2xl mt-1.5 mx-auto">
@@ -107,9 +105,9 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="z-50 sticky top-0 w-screen flex flex-col h-20 items-center filter bg-cool-white/70 dark:bg-slate-800/70 backdrop-blur-md overflow-x-hidden">
-      <nav className=" flex items-center py-4 container w-10/12 md:w-10/12 lg:w-8/12">
-        {open ? (
+    
+    <>
+     {open ? (
           <MobileNav
             open={open}
             setOpen={setOpen}
@@ -117,6 +115,11 @@ export default function Navbar() {
             setTheme={setTheme}
           />
         ) : null}
+    
+    <div className="z-50 sticky top-0 w-screen flex flex-col h-20 items-center filter bg-cool-white/70 dark:bg-slate-800/70 backdrop-blur-md overflow-x-hidden">
+        
+      <nav className=" flex items-center py-4 container w-10/12 md:w-10/12 lg:w-8/12">
+     
 
         <div className="w-3/12 flex items-center">
           <Link href="/">
@@ -198,6 +201,7 @@ export default function Navbar() {
         </div>
       </nav>
     </div>
+    </>
   );
 
 }
