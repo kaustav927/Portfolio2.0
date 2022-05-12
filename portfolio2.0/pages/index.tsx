@@ -8,12 +8,12 @@ import Footer from "../components/Footer";
 //import {Parallax, ParallaxLayer} from '@react-spring/parallax'
 const Home: NextPage = () => {
   return (
-    <body className="bg-cool-white dark:bg-slate-800 text-black">
+    <body className="bg-cool-white dark:bg-slate-800 text-black ">
       <Head>
         <title>Kaustav Sharma</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="flex flex-col content-center items-center">
+      <div className="flex flex-col content-center items-center overflow-x-hidden">
         <Navbar />
         <Hero />
         <BestProjects />

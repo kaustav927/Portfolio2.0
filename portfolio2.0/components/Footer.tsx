@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="container mt-20 justify-between w-10/12 md:w-10/12 lg:w-8/12 h-50 flex items-center py-4">
+    <div className="container mt-20 justify-between w-10/12 md:w-10/12 lg:w-8/12 h-50 flex items-center py-4 overflow-x-none">
       <div className="dark: text-white font-cd-light ">
         <footer className="text-center lg:text-left">
           <div className="grid lg:grid-cols-3 gap-4">

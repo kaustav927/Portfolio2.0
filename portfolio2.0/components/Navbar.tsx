@@ -115,6 +115,7 @@ export default function Navbar() {
             setTheme={setTheme}
           />
         ) : null}
+        
     
     <div className="z-50 sticky top-0 w-screen flex flex-col h-20 items-center filter bg-cool-white/70 dark:bg-slate-800/70 backdrop-blur-md overflow-x-hidden">
         
