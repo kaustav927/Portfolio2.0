@@ -34,10 +34,10 @@ module.exports = {
         'cd-variable': 'CD-Variable',
       },
       fontSize:{
-        xs: ['14', {lineHeight: '24px', letterSpacing:'-0.03em'}],
+        xs: ['10', {lineHeight: '30px', letterSpacing:'-0.0em'}],
         sm: ['16', {lineHeight: '28px', letterSpacing:'-0.03em'}],
         lg: ['18', {lineHeight: '28px', letterSpacing:'-0.03em'}],
-        xl: ['24', {lineHeight: '36px', letterSpacing:'-0.03em'}],
+        xl: ['28', {lineHeight: '48px', letterSpacing:'-0.03em'}],
         '2xl': ['36px', {lineHeight: '48px', letterSpacing:'0.032em'}],
         '3xl': ['48px', {lineHeight: '56px', letterSpacing:'0.032em'}],
         '4xl': ['56px', {lineHeight: '64px', letterSpacing:'0.032em'}],

@@ -13,7 +13,7 @@ const Home: NextPage = () => {
         <title>Kaustav Sharma</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="flex flex-col content-center items-center overflow-x-hidden">
+      <div className="flex flex-col content-center items-center overflow-x-none">
         <Navbar />
         <Hero />
         <BestProjects />

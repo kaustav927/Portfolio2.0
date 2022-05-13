@@ -15,16 +15,13 @@ interface mobleNavProps {
 function MobileNav({ open, setOpen, theme, setTheme }: mobleNavProps) {
   return (
     <div
-      className={`absolute top-0 left-0 h-screen w-screen bg-cool-white/70 dark:bg-slate-800/70 bg-blur-md transform ${
+      className={`absolute top-0 left-0 overflow-x-hidden h-screen w-screen z-50 bg-cool-white/80 dark:bg-slate-800/70 bg-blur-md transform ${
         open ? "-translate-x-0" : "-translate-x-full"
       } transition-transform duration-300 ease-in-out filter  lg:hidden`}
     >
-      <div className="flex items-center justify-center filter  bg-cool-white dark:bg-slate-800 h-20">
+      <div className="flex items-center mt-20 justify-center filter h-20 md:hidden">
         {/*logo container*/}
-        
-      </div>
-      <div className="flex flex-col ml-4">
-        <h1 className="text-2xl mt-1.5 mx-auto">
+        <h1 className="text-2xl mx-auto ">
           {theme === "light" ? (
             <BsFillMoonFill
               className="text-slate-800"
@@ -37,9 +34,14 @@ function MobileNav({ open, setOpen, theme, setTheme }: mobleNavProps) {
             />
           )}
         </h1>
+      </div>
+
+  
+
+      <div className="flex flex-col ml-8 w-10/12">
+        
 
         <Link href="/about" passHref>
-
           <h1
             className="text-md font-cd-semibold dark:text-white py-4"
             onClick={() =>
@@ -64,8 +66,8 @@ function MobileNav({ open, setOpen, theme, setTheme }: mobleNavProps) {
             Projects
           </h1>
         </Link>
-        <Link href="/contact" passHref>
 
+        <Link href="/contact" passHref>
           <h1
             className="text-sm font-cd-semibold dark:text-white py-4"
             onClick={() =>
@@ -84,7 +86,7 @@ function MobileNav({ open, setOpen, theme, setTheme }: mobleNavProps) {
             rel="noreferrer"
           >
             <h1
-              className="text-sm font-cd-semibold dark:text-white py-4"
+              className="text-sm font-cd-semibold dark:text-white py-4 "
               onClick={() =>
                 setTimeout(() => {
                   setOpen(!open);
@@ -117,14 +119,14 @@ export default function Navbar() {
         ) : null}
         
     
-    <div className="z-50 sticky top-0 w-screen flex flex-col h-20 items-center filter bg-cool-white/70 dark:bg-slate-800/70 backdrop-blur-md overflow-x-hidden">
+    <div className="z-50 sticky top-0 w-screen flex flex-col h-20 items-center filter bg-cool-white/70 dark:bg-slate-800/70 backdrop-blur-md overflow-x-none">
         
-      <nav className=" flex items-center py-4 container w-10/12 md:w-10/12 lg:w-8/12">
+      <nav className=" flex items-center py-4 container w-10/12 md:w-10/12 lg:w-8/12 lg:max-w-screen-lg">
      
 
         <div className="w-3/12 flex items-center">
           <Link href="/">
-            <a className="text-2xl font-cd-regular md:text-2xl lg:text-2xl dark:text-white">
+            <a className="text-xl font-cd-semibold md:text-2xl md:font-cd-regular lg:text-2xl lg:font-cd-regular dark:text-white">
               @kaust_av
             </a>
           </Link>

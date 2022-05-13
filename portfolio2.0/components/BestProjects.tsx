@@ -30,7 +30,7 @@ const BestProjects = () => {
   };
 
   return (
-    <div className="container mt-10 justify-between w-10/12 md:w-10/12 lg:w-8/12 h-full flex items-center py-4">
+    <div className="container mt-10 justify-between w-10/12 md:w-10/12 lg:w-8/12 lg:max-w-screen-lg h-full flex items-center py-4 overflow-x-hidden">
       <section className="w-full">
         <h2 id="work" className="text-4xl font-cd-bold dark:text-white">
           My work
@@ -64,7 +64,7 @@ const BestProjects = () => {
                     {
                       <Link href={project.githubLink}>
                         <a target="_blank">
-                          <FaGithub className="text-2xl mr-3 mt-3 dark:text-white" />
+                          <FaGithub className="text-xl mr-3 mt-3 dark:text-white" />
                         </a>
                       </Link>
                     }
@@ -72,7 +72,7 @@ const BestProjects = () => {
                     {project.devpostLink ? (
                       <Link href={project.devpostLink}>
                         <a target="_blank">
-                          <SiDevpost className="text-2xl ml-3 mt-3 dark:text-white" />
+                          <SiDevpost className="text-xl ml-3 mt-3 dark:text-white" />
                         </a>
                       </Link>
                     ) : null}
