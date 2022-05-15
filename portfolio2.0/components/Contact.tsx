@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 function Contact() {
   return (
     <>
-      <Navbar />
+     
       <div className="container mt-10 flex justify-between items-center w-10/12 mx-auto px md:px-14 lg:px-24 h-full">
         <section className="w-full">
           <h2 id="work" className="text-4xl font-cd-bold dark:text-white">

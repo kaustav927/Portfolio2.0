@@ -8,7 +8,7 @@ import Image from 'next/image'
 const About: NextPage = () => {
   
   return (
-  <div className="bg-cool-white dark:bg-slate-800 text-black overflow-x-hidden h-screen">
+  <div className="bg-cool-white dark:bg-slate-800 text-black ">
 
     <Head>
       <title>Kaustav Sharma | About</title>

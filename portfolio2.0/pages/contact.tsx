@@ -9,8 +9,9 @@ function contact() {
         <title>Kaustav Sharma | About</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Navbar />
       <div className="flex flex-col content-center items-center">
-        <Navbar />
+      
         <div className="container mt-1 flex justify-center items-center w-screen h-screen px overflow-hidden">
           <div className="flex flex-col">
             <form>Name</form>
