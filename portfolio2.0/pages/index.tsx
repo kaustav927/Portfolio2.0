@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import BestProjects from "../components/BestProjects";
 import Footer from "../components/Footer";
+import Skills from "../components/Skills";
 //import {Parallax, ParallaxLayer} from '@react-spring/parallax'
 const Home: NextPage = () => {
   return (
@@ -14,10 +15,11 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <div className="flex flex-col content-center items-center overflow-x-none">
+      <div className="flex flex-col content-center items-center overflow-x-hidden">
         
         <Hero />
         <BestProjects />
+        <Skills />
         <Footer />
       </div>
     </body>
