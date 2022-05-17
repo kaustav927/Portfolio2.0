@@ -2,7 +2,7 @@ import React from "react";
 
 function Hero() {
   return (
-    <div className="container mt-1 flex justify-center items-center w-screen h-screen px overflow-x-hidden">
+    <div className="font-cd-bold container mt-1 flex justify-center items-center w-screen h-screen px overflow-x-hidden">
       <div className="flex flex-col">
         <div className="relative w-full max-w-lg mx-auto">
           <h1 className="z-50 font-cd-semibold  text-2xl my-15 md:text-6xl lg:text-7xl text-center md:text-left dark:text-white">
@@ -15,7 +15,7 @@ function Hero() {
 
         <div className="w-full flex justify-center md:justify-start">
           <button className="mr-6 py-4 bg-theme text-bla font-bold mt-12 flex items-center space-x-3">
-            <span className="font-cd-regular dark:text-white">
+            <span className="font-cd-semibold dark:text-white">
               View my work.
             </span>
           </button>
