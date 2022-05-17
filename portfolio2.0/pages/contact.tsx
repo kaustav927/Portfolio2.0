@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Navbar from "../components/Navbar";
-
+import Footer from "../components/Footer";
 function contact() {
   return (
     <body className="bg-cool-white dark:bg-slate-800 text-black ">
@@ -30,6 +30,7 @@ function contact() {
             </form>
           </div>
         </div>
+        <Footer />
       </div>
     </body>
     

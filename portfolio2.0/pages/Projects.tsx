@@ -4,7 +4,7 @@ import { SiDevpost } from "react-icons/si";
 import Link from "next/link";
 import { ProjectData } from "../components/ProjectData";
 import { FiPlus, FiMinus } from "react-icons/fi";
-
+import Footer from "../components/Footer";
 import type { NextPage } from "next";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
@@ -24,6 +24,7 @@ const projects: NextPage = () => {
           <div className="flex flex-col">{/* Project Content */}</div>
         </div>
       </div>
+      <Footer />
     </body>
   );
 };

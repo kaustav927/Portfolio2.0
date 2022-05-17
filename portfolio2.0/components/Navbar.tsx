@@ -36,11 +36,7 @@ function MobileNav({ open, setOpen, theme, setTheme }: mobleNavProps) {
         </h1>
       </div>
 
-  
-
       <div className="flex flex-col ml-8 w-10/12">
-        
-
         <Link href="/about" passHref>
           <h1
             className="text-md font-cd-semibold dark:text-white py-4"
@@ -107,104 +103,98 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    
     <>
-     {open ? (
-          <MobileNav
-            open={open}
-            setOpen={setOpen}
-            theme={theme}
-            setTheme={setTheme}
-          />
-        ) : null}
-        
-    
-    <div className="z-50 sticky top-0 w-screen flex flex-col h-20 items-center filter bg-cool-white/70 dark:bg-slate-800/70 backdrop-blur-md overflow-x-none">
-        
-      <nav className=" flex items-center py-4 container w-10/12 md:w-10/12 lg:w-8/12 lg:max-w-screen-lg">
-     
+      {open ? (
+        <MobileNav
+          open={open}
+          setOpen={setOpen}
+          theme={theme}
+          setTheme={setTheme}
+        />
+      ) : null}
 
-        <div className="w-3/12 flex items-center">
-          <Link href="/">
-            <a className="text-xl font-cd-semibold md:text-2xl md:font-cd-regular lg:text-2xl lg:font-cd-regular dark:text-white">
-              @kaust_av
-            </a>
-          </Link>
-        </div>
-
-        <div className="w-9/12 flex justify-end items-center font-cd-regular">
-          <div
-            className="z-50 flex relative w-8 h-8 flex-col justify-between items-center md:hidden"
-            onClick={() => {
-              setOpen(!open);
-            }}
-          >
-            {/* hamburger button */}
-            <span
-              className={`h-1 w-full bg-black dark:bg-white transform transition duration-300 ease-in-out ${
-                open ? "rotate-45 translate-y-3.5" : ""
-              }`}
-            />
-            <span
-              className={`h-1 w-full bg-black dark:bg-white transition-all duration-300 ease-in-out ${
-                open ? "w-0" : "w-full"
-              }`}
-            />
-            <span
-              className={`h-1 w-full bg-black dark:bg-white transform transition duration-300 ease-in-out ${
-                open ? "-rotate-45 -translate-y-3.5" : ""
-              }`}
-            />
-          </div>
-
-          <div className="hidden md:flex">
-            <h1 className="text-xl mt-1.5 px-2">
-              {theme === "light" ? (
-                <BsFillMoonFill
-                  className="text-slate-800"
-                  onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-                />
-              ) : (
-                <BsFillSunFill
-                  className="text-cool-white"
-                  onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-                />
-              )}
-            </h1>
-
-
-            <Link href="/about" passHref>
-              <h1 className="text-sm font-regular px-2 dark:text-white">
-                About
-              </h1>
-            </Link>
-
-            <Link href="/projects" passHref>
-
-
-              <h1 className="text-sm font-regular px-2 dark:text-white">
-                Projects
-              </h1>
-            </Link>
-
-            <Link href="/contact" passHref>
-
-              <h1 className="text-sm font-regular px-2 dark:text-white">
-                Contact
-              </h1>
-            </Link>
-            <Link href="https://drive.google.com/file/d/18XyT6wPX2IWdWv0VCqOtwW7ZXYSuAm_g/view?usp=sharing">
-              <a target="_blank">
-                <h1 className="text-sm font-semibold px-2 dark:text-white">
-                  Resume
-                </h1>
+      <div className="z-50 sticky top-0 w-screen flex flex-col h-20 items-center filter bg-cool-white/70 dark:bg-slate-800/70 backdrop-blur-md overflow-x-none">
+        <nav className=" flex items-center py-4 container w-10/12 md:w-10/12 lg:w-8/12 lg:max-w-screen-lg">
+          <div className="w-3/12 flex items-center">
+            <Link href="/">
+              <a className="text-xl font-cd-semibold md:text-2xl md:font-cd-regular lg:text-2xl lg:font-cd-regular dark:text-white">
+                @kaust_av
               </a>
             </Link>
           </div>
-        </div>
-      </nav>
-    </div>
+
+          <div className="w-9/12 flex justify-end items-center font-cd-regular">
+            <div
+              className="z-50 flex relative w-8 h-8 flex-col justify-between items-center md:hidden"
+              onClick={() => {
+                setOpen(!open);
+              }}
+            >
+              {/* hamburger button */}
+              <span
+                className={`h-1 w-full bg-black dark:bg-white transform transition duration-300 ease-in-out ${
+                  open ? "rotate-45 translate-y-3.5" : ""
+                }`}
+              />
+              <span
+                className={`h-1 w-full bg-black dark:bg-white transition-all duration-300 ease-in-out ${
+                  open ? "w-0" : "w-full"
+                }`}
+              />
+              <span
+                className={`h-1 w-full bg-black dark:bg-white transform transition duration-300 ease-in-out ${
+                  open ? "-rotate-45 -translate-y-3.5" : ""
+                }`}
+              />
+            </div>
+
+            <div className="hidden md:flex">
+              <h1 className="text-xl mt-1.5 px-2">
+                {theme === "light" ? (
+                  <BsFillMoonFill
+                    className="text-slate-800"
+                    onClick={() =>
+                      setTheme(theme === "light" ? "dark" : "light")
+                    }
+                  />
+                ) : (
+                  <BsFillSunFill
+                    className="text-cool-white"
+                    onClick={() =>
+                      setTheme(theme === "light" ? "dark" : "light")
+                    }
+                  />
+                )}
+              </h1>
+
+              <Link href="/about" passHref>
+                <h1 className="text-sm font-regular px-2 dark:text-white">
+                  About
+                </h1>
+              </Link>
+
+              <Link href="/projects" passHref>
+                <h1 className="text-sm font-regular px-2 dark:text-white">
+                  Projects
+                </h1>
+              </Link>
+
+              <Link href="/contact" passHref>
+                <h1 className="text-sm font-regular px-2 dark:text-white">
+                  Contact
+                </h1>
+              </Link>
+              <Link href="https://drive.google.com/file/d/18XyT6wPX2IWdWv0VCqOtwW7ZXYSuAm_g/view?usp=sharing">
+                <a target="_blank">
+                  <h1 className="text-sm font-semibold px-2 dark:text-white">
+                    Resume
+                  </h1>
+                </a>
+              </Link>
+            </div>
+          </div>
+        </nav>
+      </div>
     </>
   );
-
 }
