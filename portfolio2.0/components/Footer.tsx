@@ -11,7 +11,7 @@ function Footer() {
 
 
         <div className="shrink w-1/3 h-40">
-            <div className="text-sm text-left dark:text-white">
+            <div className="text-sm font-cd-regular text-left dark:text-white">
               <Link href="/" passHref>
                 <h1>Home</h1>
               </Link>
@@ -45,7 +45,7 @@ function Footer() {
         </div>
 
         <div className="shrink w-1/3 h-40">
-          <div className="text-sm md:text-lg lg:text-lg text-right dark:text-white">
+          <div className="text-sm font-cd-regular text-right dark:text-white">
                 <Link href="https://github.com/kaustav927" passHref>
                   <h1>Github</h1>
                 </Link>
@@ -68,18 +68,18 @@ function Footer() {
 
 
       {/* Bottom Part of Footer */}
-      <div className="w-full flex justify-between mt-4 mb-8">
+      <div className="w-full flex justify-between mt-4 mb-8 text-sm font-cd-regular">
         <div className="shrink h-10 w-1/3 lg:mr-5">
-          <h1 className="text-sm text-left dark:text-white">@kaust_av</h1>
+          <h1 className="text-left dark:text-white">@kaust_av</h1>
         </div>
         <div className="shrink h-10 w-1/3 lg:mx-5">
-            <span className="flex items-center justify-center">
-              <h1 className="text-sm md:text-lg lg:text-lg text-center dark:text-white">Back To Top</h1>
+            <span className="flex items-center justify-center" onClick={()=>{(window.scrollTo(0,0))}}>
+              <h1 className="text-center dark:text-white">Back To Top</h1>
               <CgArrowLongUp className="animate-bounce text-center dark:text-white md:text-lg lg:text-lg"/>
             </span>
         </div>
         <div className="shrink h-10 w-1/3 lg:ml-5">
-         <h1 className="text-sm text-right dark:text-white">Portfolio 2022</h1>
+         <h1 className="text-right dark:text-white">Portfolio 2022</h1>
         </div>
       </div>
     </div>

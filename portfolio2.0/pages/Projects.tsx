@@ -13,7 +13,7 @@ import Head from "next/head";
 //import {Parallax, ParallaxLayer} from '@react-spring/parallax'
 const projects: NextPage = () => {
   return (
-    <div className="bg-cool-white dark:bg-slate-800 text-black ">
+    <div className="h-screen scroll-smooth bg-cool-white dark:bg-slate-800 text-black ">
 
     <Head>
       <title>Kaustav Sharma | About</title>

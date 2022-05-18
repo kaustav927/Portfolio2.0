@@ -9,7 +9,7 @@ import Skills from "../components/Skills";
 //import {Parallax, ParallaxLayer} from '@react-spring/parallax'
 const Home: NextPage = () => {
   return (
-    <body className="bg-cool-white dark:bg-slate-800 text-black ">
+    <body className="scroll-smooth bg-cool-white dark:bg-slate-800 text-black ">
       <Head>
         <title>Kaustav Sharma</title>
         <link rel="icon" href="/favicon.ico" />

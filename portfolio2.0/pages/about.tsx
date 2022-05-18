@@ -8,7 +8,7 @@ import Footer from '../components/Footer'
 const About: NextPage = () => {
   
   return (
-  <div className="bg-cool-white dark:bg-slate-800 text-black ">
+  <div className="h-screen scroll-smooth bg-cool-white dark:bg-slate-800 text-black ">
 
     <Head>
       <title>Kaustav Sharma | About</title>
@@ -16,7 +16,7 @@ const About: NextPage = () => {
     </Head>
     <Navbar/> 
    <div className="flex flex-col items-center bg-cool-white dark:bg-slate-800 overflow-x-hidden">
-      <div className="container justify-between w-10/12 md:w-10/12 lg:w-8/12 lg:max-w-screen-lg h-full flex flex-col items-center py-4">
+      <div className="container justify-between w-10/12 md:w-10/12 lg:w-8/12 lg:max-w-screen-lg flex flex-col items-center py-4">
 
           <div className="container mt-1 flex flex-col justify-center items-center h-9/12 px overflow-x-hidden">
               <div className="p-8 mt-4">
