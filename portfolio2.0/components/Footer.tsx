@@ -46,16 +46,16 @@ function Footer() {
 
         <div className="shrink w-1/3 h-40">
           <div className="text-sm md:text-lg lg:text-lg text-right dark:text-white">
-                <Link href="/" passHref>
+                <Link href="https://github.com/kaustav927" passHref>
                   <h1>Github</h1>
                 </Link>
-                <Link href="/about" passHref>
+                <Link href="https://www.linkedin.com/in/kaustav-sharma/" passHref>
                   <h1>Linkedin</h1>
                 </Link>
-                <Link href="/projects" passHref>
+                <Link href="https://twitter.com/kaust_av" passHref>
                   <h1>Twitter</h1>
                 </Link>
-                <Link href="/contact" passHref>
+                <Link href="https://github.com/kaustav927/Portfolio2.0" passHref>
                   <h1>Site Code</h1>
                 </Link>
                 </div>
