@@ -117,13 +117,13 @@ export default function Navbar() {
         <nav className=" flex items-center py-4 container w-10/12 md:w-10/12 lg:w-8/12 lg:max-w-screen-lg">
           <div className="w-3/12 flex items-center">
             <Link href="/">
-              <a className="text-xl font-cd-semibold md:text-2xl md:font-cd-regular lg:text-2xl lg:font-cd-regular dark:text-white">
+              <a className="text-xl text-left font-cd-semibold md:text-2xl md:font-cd-regular lg:text-2xl lg:font-cd-regular dark:text-white">
                 @kaust_av
               </a>
             </Link>
           </div>
 
-          <div className="w-9/12 flex justify-end items-center font-cd-regular">
+          <div className="w-9/12 flex justify-end items-center font-cd-regular ">
             <div
               className="z-50 flex relative w-8 h-8 flex-col justify-between items-center md:hidden"
               onClick={() => {
@@ -168,25 +168,25 @@ export default function Navbar() {
               </h1>
 
               <Link href="/about" passHref>
-                <h1 className="text-sm font-regular px-2 dark:text-white">
+                <h1 className="text-sm font-regular mx-2 dark:text-white">
                   About
                 </h1>
               </Link>
 
               <Link href="/projects" passHref>
-                <h1 className="text-sm font-regular px-2 dark:text-white">
+                <h1 className="text-sm font-regular mx-2 dark:text-white">
                   Projects
                 </h1>
               </Link>
 
               <Link href="/contact" passHref>
-                <h1 className="text-sm font-regular px-2 dark:text-white">
+                <h1 className="text-sm font-regular mx-2 dark:text-white">
                   Contact
                 </h1>
               </Link>
               <Link href="https://drive.google.com/file/d/18XyT6wPX2IWdWv0VCqOtwW7ZXYSuAm_g/view?usp=sharing">
                 <a target="_blank">
-                  <h1 className="text-sm font-semibold px-2 dark:text-white">
+                  <h1 className="text-sm font-semibold ml-2 dark:text-white">
                     Resume
                   </h1>
                 </a>

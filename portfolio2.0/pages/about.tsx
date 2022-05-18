@@ -19,7 +19,7 @@ const About: NextPage = () => {
       <div className="container justify-between w-10/12 md:w-10/12 lg:w-8/12 lg:max-w-screen-lg h-full flex flex-col items-center py-4">
 
           <div className="container mt-1 flex flex-col justify-center items-center h-9/12 px overflow-x-hidden">
-              <div className="p-8 mt-16 md:mt-24">
+              <div className="p-8 mt-4">
                 <Image className="rounded-lg" src="/images/pp.png" alt="" width="550" height="550"  />
               </div>
               <div className="p-8 mb-24 dark:text-white font-cd-light">
