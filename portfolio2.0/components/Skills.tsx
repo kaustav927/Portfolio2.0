@@ -14,12 +14,12 @@ const Skills = () => {
       <div className="relative flex w-full mt-6 ">
         <div className="py-4 animate-marquee whitespace-nowrap">
           {langLearn.map((item, index) => (
-            <span key={index} className="font-cd-regular text-2xl mx-4 dark:text-white">{item}</span>
+            <span key={index} className="font-cd-regular text-sm mx-4 dark:text-white">{item}</span>
           ))}
         </div>
         <div className="absolute top-0 py-4 animate-marquee2 whitespace-nowrap">
         {langLearn.map((item, index) => (
-            <span key={index} className="font-cd-regular text-2xl mx-4 dark:text-white">{item}</span>
+            <span key={index} className="font-cd-regular text-sm mx-4 dark:text-white">{item}</span>
           ))}
         </div>
       </div>
@@ -27,12 +27,12 @@ const Skills = () => {
       <div className="relative flex  mt-6">
         <div className="py-4 animate-marquee whitespace-nowrap">
           {web3Tech.map((item, index) => (
-            <span key={index} className="font-cd-regular text-2xl mx-4 dark:text-white">{item}</span>
+            <span key={index} className="font-cd-regular text-sm mx-4 dark:text-white">{item}</span>
           ))}
         </div>
         <div className="absolute top-0 py-4 animate-marquee2 whitespace-nowrap">
         {web3Tech.map((item, index) => (
-            <span key={index} className="font-cd-regular text-2xl mx-4 dark:text-white">{item}</span>
+            <span key={index} className="font-cd-regular text-sm mx-4 dark:text-white">{item}</span>
           ))}
         </div>
       </div>
@@ -41,12 +41,12 @@ const Skills = () => {
       <div className="relative flex  mt-6">
         <div className="py-4 animate-marquee whitespace-nowrap">
           {ProgLang.map((item, index) => (
-            <span key={index} className="font-cd-regular text-2xl mx-4 dark:text-white">{item}</span>
+            <span key={index} className="font-cd-regular text-sm mx-4 dark:text-white">{item}</span>
           ))}
         </div>
         <div className="absolute top-0 py-4 animate-marquee2 whitespace-nowrap">
         {ProgLang.map((item, index) => (
-            <span key={index} className="font-cd-regular text-2xl mx-4 dark:text-white">{item}</span>
+            <span key={index} className="font-cd-regular text-sm mx-4 dark:text-white">{item}</span>
           ))}
         </div>
       </div>

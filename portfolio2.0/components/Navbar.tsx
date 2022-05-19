@@ -117,7 +117,7 @@ export default function Navbar() {
         <nav className=" flex items-center py-4 container w-10/12 md:w-10/12 lg:w-8/12 lg:max-w-screen-lg">
           <div className="w-3/12 flex items-center">
             <Link href="/">
-              <a className="text-xl text-left font-cd-semibold md:text-2xl md:font-cd-regular lg:text-2xl lg:font-cd-regular dark:text-white">
+              <a className="text-sm text-left font-cd-semibold md:text-2xl md:font-cd-regular lg:text-2xl lg:font-cd-regular dark:text-white">
                 @kaust_av
               </a>
             </Link>
@@ -149,7 +149,7 @@ export default function Navbar() {
             </div>
 
             <div className="hidden md:flex">
-              <h1 className="text-xl mt-1.5 px-2">
+              <h1 className="text-lg px-4">
                 {theme === "light" ? (
                   <BsFillMoonFill
                     className="text-slate-800"

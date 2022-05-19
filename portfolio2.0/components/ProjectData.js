@@ -18,7 +18,7 @@ export const ProjectData = [
         githubLink: "https://github.com/prabh124/qna-space",
         devpostLink: "https://devpost.com/software/qna-space",
         websiteLink: "",
-        Tools: ["React.js", "Vue.js", "Vercel", "Flask"],
+        Tools: ["React.js", "Vue.js", "Vercel", "Flask","React.js", "Vue.js", "Vercel", "Flask"],
     },
 
     {
