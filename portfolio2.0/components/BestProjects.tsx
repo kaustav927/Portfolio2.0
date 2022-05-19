@@ -20,7 +20,6 @@ const BestProjects = () => {
     websiteLink: string;
     Tools: string[];
   }
-  
 
   const projectData = ProjectData;
   const [selected, setSelected] = useState<selectedData | any | null>(null);
@@ -57,20 +56,31 @@ const BestProjects = () => {
 
               {selected === index ? (
                 <>
-                <div className="flex justify-start mt-4">
+                  <div className="flex justify-start mt-4">
+                    <div className="w-2/3 mr-4 text-justify text-xs font-cd-regular dark:text-white">
+                      <h1 className="text-sm mb-4 font-cd-semibold">
+                        Description:
+                      </h1>
+                      {project.description}
+                    </div>
 
-                  <div className="w-2/3 mr-4 text-justify text-xs font-cd-regular dark:text-white">
-                    <h1 className="text-sm mb-4 font-cd-semibold">Description:</h1>
-                    {project.description}
+                    <div className="ml-4 w-1/3 flex flex-col font-cd-regular dark:text-white">
+                      <h1 className="text-sm mb-4 font-cd-semibold">
+                        Tools Used:
+                      </h1>
+                      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6">
+                        {project.Tools.map((tool: string, indexOne: number) => (
+                          <span
+                            className="text-xs text-start shrink"
+                            key={indexOne}
+                          >
+                            {tool}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
                   </div>
 
-                  <div className="ml-4 w-1/3 flex flex-col font-cd-regular dark:text-white">
-                    <h1 className="text-sm mb-4 font-cd-semibold">Tools Used:</h1>
-                    {project.Tools.map((tool: string, indexOne: number) => (<span className="flex mt-8 text-xs text-center shrink" key={indexOne}>{tool}</span>))}
-                  </div>
-
-                </div>
-                  
                   <span className="flex">
                     {
                       <Link href={project.githubLink}>
@@ -91,11 +101,13 @@ const BestProjects = () => {
                     {project.websiteLink ? (
                       <Link href={project.websiteLink}>
                         <a target="_blank">
-                          <div className="px-2 py-0.5 bg-gradient-to-r from-green-300 to-blue-400 hover:from-pink-400 hover:to-yellow-600 rounded-full text-sm ml-5 mt-3 font-cd-medium"> Live </div>
+                          <div className="px-2 py-0.5 bg-gradient-to-r from-green-300 to-blue-400 hover:from-pink-400 hover:to-yellow-600 rounded-full text-sm ml-5 mt-3 font-cd-medium">
+                            {" "}
+                            Live{" "}
+                          </div>
                         </a>
                       </Link>
                     ) : null}
-
                   </span>
                 </>
               ) : null}
