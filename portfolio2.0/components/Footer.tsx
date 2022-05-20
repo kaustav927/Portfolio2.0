@@ -28,20 +28,20 @@ function Footer() {
         </div>
 
         <div className="shrink w-1/3 h-40 ">
-              {/* <div className="text-sm md:text-lg lg:text-lg text-center dark:text-white">
+              <div className="text-sm font-cd-regular text-center dark:text-white">
               <Link href="/" passHref>
-                <h1>Art</h1>
+                <h1>Medium</h1>
               </Link>
               <Link href="/about" passHref>
-                <h1>YouTube</h1>
+                <h1>Substack</h1>
               </Link>
               <Link href="/projects" passHref>
-                <h1>Projects</h1>
+                <h1>Twitter</h1>
               </Link>
               <Link href="/contact" passHref>
-                <h1>Contact</h1>
+                <h1>Telegram</h1>
               </Link>
-              </div> */}
+              </div>
         </div>
 
         <div className="shrink w-1/3 h-40">
@@ -51,9 +51,6 @@ function Footer() {
                 </Link>
                 <Link href="https://www.linkedin.com/in/kaustav-sharma/" passHref>
                   <h1>Linkedin</h1>
-                </Link>
-                <Link href="https://twitter.com/kaust_av" passHref>
-                  <h1>Twitter</h1>
                 </Link>
                 <Link href="https://github.com/kaustav927/Portfolio2.0" passHref>
                   <h1>Site Code</h1>

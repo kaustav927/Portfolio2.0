@@ -167,6 +167,12 @@ export default function Navbar() {
                 )}
               </h1>
 
+              <Link href="/" passHref>
+                <h1 className="text-sm font-regular mx-2 dark:text-white">
+                  Home
+                </h1>
+              </Link>
+
               <Link href="/about" passHref>
                 <h1 className="text-sm font-regular mx-2 dark:text-white">
                   About
