@@ -1,4 +1,4 @@
-export const ProjectData = [
+export const BestProjectData = [
     {
         name: "LPM",
         id: "1",

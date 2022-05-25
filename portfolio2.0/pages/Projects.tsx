@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FaGithub } from "react-icons/fa";
 import { SiDevpost } from "react-icons/si";
 import Link from "next/link";
-import { ProjectData } from "../components/ProjectData";
+import { BestProjectData } from "../components/ProjectData/BestProjectData";
 import { FiPlus, FiMinus } from "react-icons/fi";
 import Footer from "../components/Footer";
 import type { NextPage } from "next";
