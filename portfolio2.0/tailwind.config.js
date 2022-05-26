@@ -36,6 +36,7 @@ module.exports = {
       fontSize:{
         xs: ['14px', {lineHeight: '28px', letterSpacing:'-0.03em'}],
         sm: ['18px', {lineHeight: '28px', letterSpacing:'-0.03em'}],
+        md: ['22px', {lineHeight: '28px', letterSpacing:'-0.03em'}],
         lg: ['26px', {lineHeight: '28px', letterSpacing:'-0.03em'}],
         xl: ['32px', {lineHeight: '48px', letterSpacing:'-0.03em'}],
         '2xl': ['36px', {lineHeight: '48px', letterSpacing:'0.032em'}],
