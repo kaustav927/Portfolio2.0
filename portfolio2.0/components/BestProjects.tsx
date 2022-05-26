@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FaGithub } from "react-icons/fa";
 import { SiDevpost } from "react-icons/si";
 import Link from "next/link";
-import { BestProjectData } from "../components/ProjectData/BestProjectData";
+import { BestProjectData } from "../components/ProjectData";
 import { FiPlus, FiMinus } from "react-icons/fi";
 
 const BestProjects = () => {
@@ -68,15 +68,10 @@ const BestProjects = () => {
                       <h1 className="text-sm mb-4 font-cd-semibold">
                         Tools Used:
                       </h1>
-                      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6">
-                        {project.Tools.map((tool: string, indexOne: number) => (
-                          <span
-                            className="text-xs text-start shrink"
-                            key={indexOne}
-                          >
-                            {tool}
-                          </span>
-                        ))}
+                      <div className="flex-wrap flex mt-2">
+                      {project.Tools.map((tool:string, indexOne:number) => (
+                        <span key={indexOne} className="font-cd-semibold mb-3 text-white bg-slate-800 dark:text-black dark:bg-cool-white text-sm mr-3 px-3 py-2">{tool}</span>
+                      ))}
                       </div>
                     </div>
                   </div>
@@ -102,8 +97,7 @@ const BestProjects = () => {
                       <Link href={project.websiteLink}>
                         <a target="_blank">
                           <div className="px-2 py-0.5 bg-gradient-to-r from-green-300 to-blue-400 hover:from-pink-400 hover:to-yellow-600 rounded-full text-sm ml-5 mt-3 font-cd-medium">
-                            {" "}
-                            Live{" "}
+                            Live
                           </div>
                         </a>
                       </Link>
