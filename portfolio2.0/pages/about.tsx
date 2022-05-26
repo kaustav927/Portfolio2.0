@@ -4,8 +4,7 @@ import Navbar from '../components/Navbar'
 import Head from 'next/head'
 import Image from 'next/image'
 import Footer from '../components/Footer'
-import { EmojiProvider, Emoji } from 'react-apple-emojis'
-import emojiData from 'react-apple-emojis/src/data.json'
+
 //import {Parallax, ParallaxLayer} from '@react-spring/parallax'
 const About: NextPage = () => {
   

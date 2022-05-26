@@ -47,6 +47,7 @@ const BestProjects = () => {
             >
               <span className="flex justify-between">
                 {project.name}
+                {/* <span className="text-sm font-cd-medium">{project.timeLine}</span> */}
                 {selected === index ? (
                   <FiMinus className=" text-xs h-4 w-4 mt-4 dark:text-white" />
                 ) : (

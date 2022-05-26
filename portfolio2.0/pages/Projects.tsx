@@ -1,9 +1,3 @@
-import React, { useState } from "react";
-import { FaGithub } from "react-icons/fa";
-import { SiDevpost } from "react-icons/si";
-import Link from "next/link";
-import { BestProjectData } from "../components/ProjectData/BestProjectData";
-import { FiPlus, FiMinus } from "react-icons/fi";
 import Footer from "../components/Footer";
 import type { NextPage } from "next";
 import Navbar from "../components/Navbar";
@@ -16,7 +10,7 @@ const projects: NextPage = () => {
     <div className="h-screen scroll-smooth bg-cool-white dark:bg-slate-800 text-black ">
 
     <Head>
-      <title>Kaustav Sharma | About</title>
+      <title>Kaustav Sharma | Projects</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <Navbar/> 
