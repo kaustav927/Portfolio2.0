@@ -16,14 +16,14 @@ const BestProjects = () => {
     timeLine: string;
     description: string;
     githubLink: string;
-    devpostLink: string | undefined;
+    devpostLink: string | undefined | any;
     websiteLink: string;
     Tools: string[];
   }
 
-  const projectData20 = ProjectData20;
-  const projectData21 = ProjectData21;
-  const projectData22 = ProjectData22;
+  let projectData20= ProjectData20;
+  let projectData21 = ProjectData21;
+  let projectData22 = ProjectData22;
 
   const [selected20, setSelected20] = useState<selectedData | any | null>(null);
   const [selected21, setSelected21] = useState<selectedData | any | null>(null);
