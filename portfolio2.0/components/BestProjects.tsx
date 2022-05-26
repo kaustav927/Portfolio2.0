@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FaGithub } from "react-icons/fa";
 import { SiDevpost } from "react-icons/si";
 import Link from "next/link";
-import { BestProjectData } from "./ProjectData/BestProjectData";
+import { BestProjectData } from "../components/ProjectData/BestProjectData";
 import { FiPlus, FiMinus } from "react-icons/fi";
 
 const BestProjects = () => {
@@ -31,7 +31,7 @@ const BestProjects = () => {
   return (
     <div className="container mt-10 justify-between flex items-center w-10/12 md:w-10/12 lg:w-8/12 lg:max-w-screen-lg py-4 overflow-x-hidden">
       <section className="w-full">
-        <h2 id="work" className="text-4xl font-cd-bold dark:text-white">
+        <h2 id="work" className="text-4xl underline font-cd-bold dark:text-white">
           My work
         </h2>
 

@@ -21,7 +21,7 @@ const projects: NextPage = () => {
     </Head>
     <Navbar/> 
    <div className="flex flex-col items-center bg-cool-white dark:bg-slate-800 overflow-x-hidden">
-     <TimelineProjects/>
+      <TimelineProjects/>
       <Footer />
     </div>
   </div> 

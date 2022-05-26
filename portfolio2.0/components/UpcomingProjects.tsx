@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import { FaGithub } from "react-icons/fa";
 import { SiDevpost } from "react-icons/si";
 import Link from "next/link";
-import { ProjectData } from "./ProjectData/BestProjectData";
+import { BestProjectData } from "../components/ProjectData/BestProjectData";
 import { FiPlus, FiMinus } from "react-icons/fi";
 
 const UpcomingProjects = () => {
   interface selectedData {
     index: number | null | any;
   }
-  const projectData = ProjectData;
+  const projectData = BestProjectData;
   const [selected, setSelected] = useState<selectedData | any | null>(null);
 
   const toggle = (index: number) => {

@@ -41,7 +41,6 @@ export const ProjectData20 = [
     },
 ];
 
-
 export const ProjectData21 = [
     {
         name: "LPM",
@@ -127,7 +126,6 @@ export const ProjectData22 = [
         Tools: ["React.js", "Vue.js", "Vercel", "Flask"],
     },
 ];
-
 
 export const BestProjectData = [
     {

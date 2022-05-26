@@ -46,7 +46,7 @@ const BestProjects = () => {
     <>
     <div className="container mt-10 justify-between flex items-center w-10/12 md:w-10/12 lg:w-8/12 lg:max-w-screen-lg py-4 overflow-x-hidden">
       <section className="w-full">
-        <h2 id="work" className="text-4xl font-cd-bold dark:text-white">
+        <h2 id="work" className="text-4xl underline font-cd-bold dark:text-white">
           2022
         </h2>
         {projectData22.map((project, index: any) => (
@@ -128,7 +128,7 @@ const BestProjects = () => {
 
     <div className="container mt-10 justify-between flex items-center w-10/12 md:w-10/12 lg:w-8/12 lg:max-w-screen-lg py-4 overflow-x-hidden">
     <section className="w-full">
-      <h2 id="work" className="text-4xl font-cd-bold dark:text-white">
+      <h2 id="work" className="text-4xl underline font-cd-bold dark:text-white">
         2021
       </h2>
       {projectData21.map((project, index: any) => (
@@ -210,7 +210,7 @@ const BestProjects = () => {
 
     <div className="container mt-10 justify-between flex items-center w-10/12 md:w-10/12 lg:w-8/12 lg:max-w-screen-lg py-4 overflow-x-hidden">
       <section className="w-full">
-        <h2 id="work" className="text-4xl font-cd-bold dark:text-white">
+        <h2 id="work" className="text-4xl underline font-cd-bold dark:text-white">
           2020
         </h2>
         {projectData20.map((project, index: any) => (
