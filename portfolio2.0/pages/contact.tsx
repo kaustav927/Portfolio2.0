@@ -23,7 +23,7 @@ function contact() {
               <h1 className="text-lg md:text-xl lg:text-3xl font-cd-bold text-left mb-8">Building Something Cool? Reach Out!</h1>
               {/* <p className="text-sm font-cd-medium text-left mb-6">I'm always looking for new opportunities to learn and grow.</p> */}
               <p className="text-md font-cd-medium text-left mb-6">Open to client projects, offers, or open-source collaboration. </p>
-              <p className="text-sm font-cd-medium text-left mb-6">Available 24/7 for artists, creative agencies and small startups from anywhere. </p>
+              <p className="text-sm font-cd-medium text-left mb-6">Available 24/7 for artists, creative agencies and startups from anywhere. </p>
             </div>
 
 

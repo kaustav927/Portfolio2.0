@@ -32,7 +32,7 @@ const BestProjects = () => {
     <div className="container mt-10 justify-between flex items-center w-10/12 md:w-10/12 lg:w-8/12 lg:max-w-screen-lg py-4 overflow-x-hidden">
       <section className="w-full">
         <h2 id="work" className="text-4xl underline font-cd-bold dark:text-white">
-          My work
+          Best Projects
         </h2>
 
         {projectData.map((project, index: any) => (
