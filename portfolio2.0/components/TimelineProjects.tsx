@@ -5,7 +5,7 @@ import Link from "next/link";
 
 import { FiPlus, FiMinus } from "react-icons/fi";
 
-const BestProjects = (props:any) => {
+const TimelineProjects =(props:any) => {
   interface selectedData {
     index: number | null | any;
   }
@@ -268,4 +268,4 @@ const BestProjects = (props:any) => {
   );
 };
 
-export default BestProjects;
+export default TimelineProjects;
