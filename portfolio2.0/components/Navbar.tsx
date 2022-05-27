@@ -124,8 +124,8 @@ export default function Navbar() {
         />
       ) : null}
 
-      <div className="z-50 sticky top-0 w-screen flex flex-col h-20 items-center filter bg-cool-white/70 dark:bg-slate-800/70 backdrop-blur-md overflow-x-none">
-        <nav className="flex items-center mt-1 lg:-ml-4 md:-ml-2 py-4 container w-10/12 md:w-10/12 lg:w-8/12 lg:max-w-screen-lg">
+      <div className="z-50 sticky top-0 w-screen overflow-x-none flex flex-col h-20 items-center filter bg-cool-white/70 dark:bg-slate-800/70 backdrop-blur-md ">
+        <nav className="flex items-center mt-1 lg:-ml-4 md:-ml-2 py-4 container w-10/12 md:w-10/12 lg:w-8/12 lg:max-w-screen-lg overflow-hidden">
           <div className="w-3/12 flex items-left">
             <Link href="/" passHref>
                 <h1 className="cursor-default text-sm text-left font-cd-medium md:text-2xl md:font-cd-regular lg:text-2xl lg:font-cd-regular dark:text-white">@kaust_av</h1>
