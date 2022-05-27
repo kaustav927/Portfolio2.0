@@ -10,16 +10,6 @@ const BestProjects = () => {
     index: number | null | any;
   }
 
-  interface project {
-    name: string;
-    id: string;
-    timeLine: string;
-    description: string;
-    githubLink: string;
-    devpostLink: string | undefined | any;
-    websiteLink: string;
-    Tools: string[];
-  }
 
   let projectData20= ProjectData20;
   let projectData21 = ProjectData21;

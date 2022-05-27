@@ -29,12 +29,12 @@ function MobileNav({ open, setOpen, theme, setTheme }: mobleNavProps) {
         <h1 className="text-2xl mx-auto ">
           {theme === "light" ? (
             <BsFillMoonFill
-              className="text-slate-800"
+              className="text-black"
               onClick={() => setTheme(theme === "light" ? "dark" : "light")}
             />
           ) : (
             <BsFillSunFill
-              className="text-cool-white"
+              className="text-white"
               onClick={() => setTheme(theme === "light" ? "dark" : "light")}
             />
           )}
@@ -188,8 +188,8 @@ export default function Navbar() {
                 </h1>
               </Link>
 
-              <Link href="/projects" passHref>
-                <h1 className="text-sm font-regular mx-2 dark:text-white" >
+              <Link href="/projects" prefetch>
+                <h1 className="text-sm font-regular px-2 dark:text-white">
                   Projects
                 </h1>
               </Link>
