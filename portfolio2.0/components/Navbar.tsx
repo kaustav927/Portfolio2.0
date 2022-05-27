@@ -161,14 +161,14 @@ export default function Navbar() {
               <h1 className="text-lg px-4">
                 {theme === "light" ? (
                   <BsFillMoonFill
-                    className="text-slate-800"
+                    className="text-slate-800 z-50"
                     onClick={() =>
                       setTheme(theme === "light" ? "dark" : "light")
                     }
                   />
                 ) : (
                   <BsFillSunFill
-                    className="text-cool-white"
+                    className="text-cool-white z-50"
                     onClick={() =>
                       setTheme(theme === "light" ? "dark" : "light")
                     }
@@ -188,7 +188,7 @@ export default function Navbar() {
                 </h1>
               </Link>
 
-              <Link href="/projects" prefetch>
+              <Link href="/projects" passHref>
                 <a>
                   <h1 className="text-sm font-regular px-2 dark:text-white">
                     Projects

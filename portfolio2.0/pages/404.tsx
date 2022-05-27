@@ -26,7 +26,7 @@ const NotFound: NextPage = () => {
             
                 <span className="text-md md:text-xl lg:text-2xl font-cd-bold py-1">Oooops...</span>
                 <span className="text-sm font-cd-light py-1">This page cannot be found. </span>
-                <span className="text-sm font-cd-light py-1"> <Link href='/'><a>Go Back to Home Page</a></Link> </span>
+                <span className="text-sm mt-6 font-cd-light py-1 bg-black dark:bg-white rounded-md animate-pulse"> <Link href='/'><a className="font-cd-bold dark:text-black text-white">Go Back to Home Page</a></Link> </span>
             </div>
             
           </div>

@@ -3,7 +3,8 @@ import type { NextPage } from "next";
 import Navbar from "../components/Navbar";
 import Head from "next/head";
 import TimelineProjects from "../components/TimelineProjects";
-const projects: NextPage = () => {
+import {ProjectData20,ProjectData21,ProjectData22} from "../components/ProjectData";
+const Projects: NextPage = () => {
   return (
     <div className="h-screen scroll-smooth bg-cool-white dark:bg-slate-800 text-black ">
     <Head>
@@ -12,7 +13,7 @@ const projects: NextPage = () => {
     </Head>
     <Navbar/> 
    <div className="flex flex-col items-center bg-cool-white dark:bg-slate-800 overflow-x-hidden">
-      <TimelineProjects/>
+      <TimelineProjects data20={ProjectData20} data21={ProjectData21} data22={ProjectData22}/>
       <Footer />
     </div>
   </div> 
@@ -20,5 +21,5 @@ const projects: NextPage = () => {
 };
 
 
-export default projects;
+export default Projects;
 
