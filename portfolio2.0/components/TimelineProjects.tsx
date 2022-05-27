@@ -2,18 +2,28 @@ import React, { useState } from "react";
 import { FaGithub } from "react-icons/fa";
 import { SiDevpost } from "react-icons/si";
 import Link from "next/link";
-
+import { ProjectData20,ProjectData21,ProjectData22 } from "../components/ProjectData";
 import { FiPlus, FiMinus } from "react-icons/fi";
 
-const TimelineProjects =(props:any) => {
+const TimelineProjects =() => {
   interface selectedData {
     index: number | null | any;
   }
+  interface project {
+    name: string;
+    id: string;
+    timeLine: string;
+    description: string;
+    githubLink: string;
+    devpostLink: string | undefined;
+    websiteLink: string;
+    Tools: string[];
+  }
 
 
-  let projectData20= props.data20;
-  let projectData21 = props.data21;
-  let projectData22 = props.data22;
+  let projectData20= ProjectData20;
+  let projectData21 = ProjectData21;
+  let projectData22 = ProjectData22;
 
   const [selected20, setSelected20] = useState<selectedData | any | null>(null);
   const [selected21, setSelected21] = useState<selectedData | any | null>(null);
