@@ -59,19 +59,19 @@ const BestProjects = () => {
                 <>
                   <div className="flex justify-start mt-4">
                     <div className="w-2/3 mr-4 text-justify text-xs font-cd-regular dark:text-white">
-                      <h1 className="text-sm mb-4 font-cd-semibold">
+                      <h1 className="text-sm mb-4 font-cd-medium">
                         Description:
                       </h1>
                       {project.description}
                     </div>
 
                     <div className="ml-4 w-1/3 flex flex-col font-cd-regular dark:text-white">
-                      <h1 className="text-sm mb-4 font-cd-semibold">
+                      <h1 className="text-sm mb-4 font-cd-medium">
                         Tools Used:
                       </h1>
                       <div className="flex-wrap flex mt-2">
                       {project.Tools.map((tool:string, indexOne:number) => (
-                        <span key={indexOne} className="font-cd-semibold mb-3 text-white bg-slate-800 dark:text-black dark:bg-cool-white text-sm mr-3 px-3 py-2">{tool}</span>
+                        <span key={indexOne} className="font-cd-medium mb-3 text-white bg-slate-800 dark:text-black dark:bg-cool-white text-sm mr-3 px-3 py-2">{tool}</span>
                       ))}
                       </div>
                     </div>

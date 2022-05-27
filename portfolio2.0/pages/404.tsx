@@ -4,7 +4,6 @@ import type { NextPage } from 'next'
 import React from "react";
 import Navbar from '../components/Navbar'
 import Head from 'next/head'
-import Image from 'next/image'
 import Footer from '../components/Footer'
 import Link from 'next/link'
 //import {Parallax, ParallaxLayer} from '@react-spring/parallax'
@@ -14,7 +13,7 @@ const NotFound: NextPage = () => {
   <div className="h-screen scroll-smooth bg-cool-white dark:bg-slate-800 text-black ">
 
     <Head>
-      <title>Kaustav Sharma | About</title>
+      <title>Kaustav Sharma | 404</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <Navbar/> 

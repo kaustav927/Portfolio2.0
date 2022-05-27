@@ -20,7 +20,7 @@ interface mobleNavProps {
 function MobileNav({ open, setOpen, theme, setTheme }: mobleNavProps) {
   return (
     <div
-      className={`absolute top-0 left-0 overflow-x-hidden h-screen w-screen z-50 bg-cool-white/80 dark:bg-slate-800/70 bg-blur-md transform ${
+      className={`absolute top-0 left-0 overflow-x-hidden h-screen w-screen z-50 bg-cool-white/70 dark:bg-slate-800/70 backdrop-blur-md transform ${
         open ? "-translate-x-0" : "-translate-x-full"
       } transition-transform duration-300 ease-in-out filter  lg:hidden`}
     >
@@ -44,7 +44,7 @@ function MobileNav({ open, setOpen, theme, setTheme }: mobleNavProps) {
       <div className="flex flex-col ml-8 w-10/12">
         <Link href="/about" passHref>
           <h1
-            className="text-md font-cd-semibold dark:text-white py-4"
+            className="text-md font-cd-medium dark:text-white py-4"
             onClick={() =>
               setTimeout(() => {
                 setOpen(!open);
@@ -56,7 +56,7 @@ function MobileNav({ open, setOpen, theme, setTheme }: mobleNavProps) {
         </Link>
         <Link href="/projects" passHref>
           <h1
-            className="text-sm font-cd-semibold dark:text-white py-4"
+            className="text-md font-cd-medium dark:text-white py-4"
             onClick={() =>
               setTimeout(() => {
                 setOpen(!open);
@@ -68,7 +68,7 @@ function MobileNav({ open, setOpen, theme, setTheme }: mobleNavProps) {
         </Link>
         <Link href="/contact" passHref>
           <h1
-            className="text-sm font-cd-semibold dark:text-white py-4"
+            className="text-md font-cd-medium dark:text-white py-4"
             onClick={() =>
               setTimeout(() => {
                 setOpen(!open);
@@ -85,7 +85,7 @@ function MobileNav({ open, setOpen, theme, setTheme }: mobleNavProps) {
             rel="noreferrer"
           >
             <h1
-              className="text-sm font-cd-semibold dark:text-white py-4 "
+              className="text-md font-cd-medium dark:text-white py-4 "
               onClick={() =>
                 setTimeout(() => {
                   setOpen(!open);

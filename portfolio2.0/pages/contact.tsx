@@ -31,21 +31,21 @@ function contact() {
               <div className="flex flex-col items-center">
                 <div className="flex flex-col items-center justify-center">
                   <div className="mb-4">
-                    <h1 className="font-cd-semibold text-sm ml-2 text-center">Time Zone: </h1>
+                    <h1 className="font-cd-medium text-sm ml-2 text-center">Time Zone: </h1>
                     <h2 className="font-cd-regular text-sm ml-2 text-center"><span className="font-cd-medium mr-2">EST </span>   UTC-5:00</h2>
                   </div>
                 </div>
 
                 <div className="flex flex-col items-center justify-center">
                     <div className="mb-4">
-                      <h1 className="font-cd-semibold text-sm ml-2 text-center">Email: </h1>
+                      <h1 className="font-cd-medium text-sm ml-2 text-center">Email: </h1>
                       <h2 className="font-cd-medium text-sm ml-2 text-center">ksharm27@outlook.com</h2>
                     </div>
                   </div>
                
                   <div className="flex flex-col items-center justify-center">
                     <div className="mb-4">
-                      <h1 className="font-cd-semibold text-sm ml-2 text-center">Discord: </h1>
+                      <h1 className="font-cd-medium text-sm ml-2 text-center">Discord: </h1>
                       <h2 className="font-cd-regular text-sm ml-2 text-center">LuckyTiger#3256</h2>
                     </div>
                   </div>
@@ -55,7 +55,7 @@ function contact() {
                 <a target="_blank">
                   <div className="flex flex-col items-center justify-center">
                     <div className="mb-4">
-                      <h1 className="font-cd-semibold text-sm ml-2 text-center">Twitter: </h1>
+                      <h1 className="font-cd-medium text-sm ml-2 text-center">Twitter: </h1>
                       <h2 className="font-cd-regular text-sm ml-2 text-center">@kaust_av</h2>
                     </div>
                   </div>
@@ -65,7 +65,7 @@ function contact() {
                   <a target="_blank">
                   <div className="flex flex-col items-center justify-center">
                     <div className="mb-4">
-                      <h1 className="font-cd-semibold text-sm ml-2 text-center">Github: </h1>
+                      <h1 className="font-cd-medium text-sm ml-2 text-center">Github: </h1>
                       <h2 className="font-cd-regular text-sm ml-2 text-center">kaustav927</h2>
                     </div>
                   </div>
