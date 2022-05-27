@@ -181,21 +181,17 @@ export default function Navbar() {
                 </h1>
               </Link>
 
-              <Link href="/about/" passHref>
+              <Link href="/about" passHref>
                 <h1 className="text-sm font-regular mx-2 dark:text-white">
                   About
                 </h1>
               </Link>
-
-              <Link href="/projects/" passHref>
-                <a>
-                  <h1 className="text-sm font-regular px-2 dark:text-white">
-                    Projects
-                  </h1>
-                </a>
+              <Link href="/projects" passHref>
+                <h1 className="text-sm font-regular mx-2 dark:text-white">
+                  Projects
+                </h1>
               </Link>
-
-              <Link href="/contact/" passHref>
+              <Link href="/contact" passHref>
                 <h1 className="text-sm font-regular mx-2 dark:text-white">
                   Contact
                 </h1>

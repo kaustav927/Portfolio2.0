@@ -3,7 +3,9 @@ import type { NextPage } from "next";
 import Navbar from "../components/Navbar";
 import Head from "next/head";
 import TimelineProjects from "../components/TimelineProjects";
-const projects: NextPage = () => {
+
+
+const projects:NextPage = () => {
   return (
     <div className="h-screen scroll-smooth bg-cool-white dark:bg-slate-800 text-black ">
     <Head>

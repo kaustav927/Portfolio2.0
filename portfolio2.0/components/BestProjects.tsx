@@ -2,9 +2,8 @@ import React, { useState } from "react";
 import { FaGithub } from "react-icons/fa";
 import { SiDevpost } from "react-icons/si";
 import Link from "next/link";
-import { BestProjectData } from "../components/ProjectData";
 import { FiPlus, FiMinus } from "react-icons/fi";
-
+import pData from '../projectData.json';
 const BestProjects = () => {
   interface selectedData {
     index: number | null | any;
@@ -21,7 +20,7 @@ const BestProjects = () => {
     Tools: string[];
   }
 
-  const projectData = BestProjectData;
+  const projectData = pData.BestProjectData;
   const [selected, setSelected] = useState<selectedData | any | null>(null);
 
   const toggle = (index: null) => {
