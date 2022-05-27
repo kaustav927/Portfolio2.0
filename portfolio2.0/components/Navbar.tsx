@@ -12,6 +12,11 @@ interface mobleNavProps {
   setTheme: Function;
 }
 
+
+
+
+
+
 function MobileNav({ open, setOpen, theme, setTheme }: mobleNavProps) {
   return (
     <div
@@ -49,7 +54,6 @@ function MobileNav({ open, setOpen, theme, setTheme }: mobleNavProps) {
             About
           </h1>
         </Link>
-
         <Link href="/projects" passHref>
           <h1
             className="text-sm font-cd-semibold dark:text-white py-4"
@@ -62,7 +66,6 @@ function MobileNav({ open, setOpen, theme, setTheme }: mobleNavProps) {
             Projects
           </h1>
         </Link>
-
         <Link href="/contact" passHref>
           <h1
             className="text-sm font-cd-semibold dark:text-white py-4"
@@ -98,6 +101,14 @@ function MobileNav({ open, setOpen, theme, setTheme }: mobleNavProps) {
   );
 }
 
+
+
+
+
+
+
+
+
 export default function Navbar() {
   const { theme, setTheme } = useTheme();
   const [open, setOpen] = useState(false);
@@ -116,7 +127,7 @@ export default function Navbar() {
       <div className="z-50 sticky top-0 w-screen flex flex-col h-20 items-center filter bg-cool-white/70 dark:bg-slate-800/70 backdrop-blur-md overflow-x-none">
         <nav className=" flex items-center py-4 container w-10/12 md:w-10/12 lg:w-8/12 lg:max-w-screen-lg">
           <div className="w-3/12 flex items-center">
-            <Link href="/">
+            <Link href="/" passHref>
                 <h1 className="cursor-default text-sm text-left font-cd-semibold md:text-2xl md:font-cd-regular lg:text-2xl lg:font-cd-regular dark:text-white">@kaust_av</h1>
             </Link>
           </div>
@@ -178,7 +189,7 @@ export default function Navbar() {
               </Link>
 
               <Link href="/projects" passHref>
-                <h1 className="text-sm font-regular mx-2 dark:text-white">
+                <h1 className="text-sm font-regular mx-2 dark:text-white" >
                   Projects
                 </h1>
               </Link>

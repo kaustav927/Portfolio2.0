@@ -1,14 +1,12 @@
 import Footer from "../components/Footer";
 import type { NextPage } from "next";
 import Navbar from "../components/Navbar";
-import Hero from "../components/Hero";
 import Head from "next/head";
 import TimelineProjects from "../components/TimelineProjects";
 //import {Parallax, ParallaxLayer} from '@react-spring/parallax'
 const projects: NextPage = () => {
   return (
     <div className="h-screen scroll-smooth bg-cool-white dark:bg-slate-800 text-black ">
-
     <Head>
       <title>Kaustav Sharma | Projects</title>
       <link rel="icon" href="/favicon.ico" />
