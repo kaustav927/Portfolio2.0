@@ -189,9 +189,11 @@ export default function Navbar() {
               </Link>
 
               <Link href="/projects" prefetch>
-                <h1 className="text-sm font-regular px-2 dark:text-white">
-                  Projects
-                </h1>
+                <a>
+                  <h1 className="text-sm font-regular px-2 dark:text-white">
+                    Projects
+                  </h1>
+                </a>
               </Link>
 
               <Link href="/contact" passHref>
