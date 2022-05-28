@@ -5,7 +5,7 @@ import Head from "next/head";
 import TimelineProjects from "../components/TimelineProjects";
 
 
-const projects:NextPage = () => {
+const Projects:NextPage = () => {
   return (
     <div className="h-screen scroll-smooth bg-cool-white dark:bg-slate-800 text-black ">
     <Head>
@@ -22,5 +22,5 @@ const projects:NextPage = () => {
 };
 
 
-export default projects;
+export default Projects;
 
