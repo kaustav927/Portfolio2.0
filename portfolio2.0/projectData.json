@@ -5,112 +5,111 @@
         "name": "Auto Apply",
         "id": "1",
         "timeLine": "August 2020",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ",
+        "description": "Description: Created a Python script allowing me to sign in to Linkedin and apply to software engineer internships automatically using the Selenium web automation library.",
         "githubLink": "https://github.com/kaustav927/AutoApply",
         "devpostLink": "",
         "websiteLink": "",
-        "Tools": ["React.js", "Vue.js", "Vercel", "Flask"]
+        "Tools": ["Python", "Selenium"]
     },
     {
         "name": "Portfolio 1.0",
         "id": "2",
         "timeLine": "June 2020",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ",
+        "description": "My first React project after learning about CSS, HTML and Javascript. Styled using bootstrap components and my own custom CSS, this website helped me land my first internship in tech. It has since been replaced with this current site after 2 years of use.",
         "githubLink": "https://github.com/kaustav927/Portfolio",
         "devpostLink": "",
-        "websiteLink": "",
-        "Tools": ["React.js", "Vue.js", "Vercel", "Flask"]
+        "websiteLink": "https://master.d1i5exj5s2yp69.amplifyapp.com/",
+        "Tools": ["React.js", "HTML", "CSS", "Bootstrap"]
     }
 ],
 "PD21" : [
     {
-        "name": "LPM",
+        "name": "Loan Prediction Model",
         "id": "1",
         "timeLine": "January 2021",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ",
+        "description": "Worked with co-workers at my previous company Finastra for the annual company-wide hackathon. LPM couples a multivariate deep-learning model API with a cross-platform frontend, enabling brokers to predict their applicant’s mortgage loan approval with 91%+ accuracy. Represented my team to a panel of international judges and ended up winning first place at Hack to The Future 2020.",
         "githubLink": "https://github.com/kaustav927/LoanPredictionModel",
         "devpostLink": "https://devpost.com/software/ml-in-ml",
         "websiteLink": "https://loan-prediction-model-kaustav927.vercel.app/",
-        "Tools": ["React.js", "Vue.js", "Vercel", "Flask"]
+        "Tools": ["Python", "Pandas", "Keras", "Scikit-learn", "Flask", "Vue.js"]
     },
 
     {
         "name": "QnA Space",
         "id": "2",
         "timeLine": "March 2021",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ",
+        "description": "Participated came second place in SF Hacks 2021 with my classmates from Western University to create an ed-tech concept for courses to facilitate remote learning. QnA Space provides course administrators with a dashboard to help them analyze and bridge the gap between course content being taught, and their student’s understanding of the material, in an online setting.",
         "githubLink": "https://github.com/prabh124/qna-space",
         "devpostLink": "https://devpost.com/software/qna-space",
         "websiteLink": "",
-        "Tools": ["React.js", "Vue.js", "Vercel", "Flask","React.js", "Vue.js", "Vercel", "Flask"]
+        "Tools": ["Python", "Pandas", "GCP", "AutoML","Cloud Natural Language", "Figma"]
     },
 
     {
         "name": "DeComm",
         "id": "3",
         "timeLine": "June 2021",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ",
+        "description": "A Full-stack local-classified e-commerce application for the DeFi space. Enables users to buy and sell local goods and services using a Web 3.0 crypto wallet like Metamask, supporting transactions with ERC-20 standard DAI and USDT stable coins. ",
         "githubLink": "https://github.com/kaustav927/DeComm",
         "devpostLink": "",
         "websiteLink": "",
-        "Tools": ["React.js", "Vue.js", "Vercel", "Flask","React.js", "Vue.js", "Vercel", "Flask"]
+        "Tools": ["Solidity", "Truffle Suite", "Ethers.js", "Node.js","MongoDB", "React.js"]
     },
 
     {
         "name": "BSC Token Sniper Bot",
         "id": "4",
         "timeLine": "May 2021",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ",
+        "description": "Created a bot allowing users to purchase a BSC token as soon as liquidity is added to the token’s contract address. Users need to set up their own node with Moralis for the Binance Smart Chain Web Socket endpoint which is to be configured in app. Users can purchase a pre-determined token amount as soon as liquidity is added at launch. ",                                      
         "githubLink": "https://github.com/kaustav927/CryptoSniperBotBSC",
         "devpostLink": "",
         "websiteLink": "",
-        "Tools": ["React.js", "Vue.js", "Vercel", "Flask","React.js", "Vue.js", "Vercel", "Flask"]
+        "Tools": ["Node.js", "Ethers.js", "Moralis"]
     }
 ],
 
 "PD22" : [
     {
-        "name": "LPM",
+        "name": "Chat Dapp",
         "id": "1",
-        "timeLine": "January 2021",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ",
-        "githubLink": "https://github.com/kaustav927/LoanPredictionModel",
-        "devpostLink": "https://devpost.com/software/ml-in-ml",
-        "websiteLink": "https://loan-prediction-model-kaustav927.vercel.app/",
-        "Tools": ["React.js", "Vue.js", "Vercel", "Flask"]
-    },
-
-    {
-        "name": "QnA Space",
-        "id": "2",
-        "timeLine": "March 2021",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ",
-        "githubLink": "https://github.com/prabh124/qna-space",
-        "devpostLink": "https://devpost.com/software/qna-space",
-        "websiteLink": "",
-        "Tools": ["React.js", "Vue.js", "Vercel", "Flask","React.js", "Vue.js", "Vercel", "Flask"]
-    },
-
-    {
-        "name": "DeComm",
-        "id": "3",
-        "timeLine": "June 2021",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ",
-        "githubLink": "https://github.com/kaustav927/DeComm",
+        "timeLine": "January 2022",
+        "description": "A Web3.0 messaging app which allows users to sign in with their wallet and send and receive messages to and from other users signed in to the app. Currently only works for 1 instance (2 users). The site may be down since I use Moralis’s free tire.",      
+        "githubLink": "https://github.com/kaustav927/messenger",
         "devpostLink": "",
         "websiteLink": "",
-        "Tools": ["React.js", "Vue.js", "Vercel", "Flask","React.js", "Vue.js", "Vercel", "Flask"]
+        "Tools": ["Next.js", "TailwindCSS", "React.js", "Moralis", "Polygon"]
     },
 
     {
-        "name": "BSC Token Sniper Bot",
+        "name": "PassKey",
+        "id": "2",
+        "timeLine": "March 2022",
+        "description": "Created this as part of my fourth year Human Computer Interaction course at Western University with a group of 6 CS classmates. Chose to re design a password manager (KeyPass) and make it available as a webapp.",
+        "githubLink": "https://github.com/kaustav927/PassKey",
+        "devpostLink": "",
+        "websiteLink": "https://pass-q7s3urrfx-kaustav927.vercel.app/",
+        "Tools": ["Next.js", "TailwindCSS", "React.js", "Vercel","Firebase", "Figma"]
+    },
+    {
+        "name": "This Website",
+        "id": "3",
+        "timeLine": "February 2022",
+        "description": "Made this portfolio website as an upgrade to my previous portfolio website from 2020. Added a dark mode, moved from single-page to multi-page, and architected it so it is easy to update static data such as projects and skills. ",        
+        "githubLink": "https://github.com/kaustav927/Portfolio2.0",
+        "devpostLink": "",
+        "websiteLink": "",
+        "Tools": ["Next.js", "TailwindCSS", "React.js", "TypeScript", "Vercel" ]
+    },
+
+    {
+        "name": "WebTweet",
         "id": "4",
         "timeLine": "May 2021",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ",
-        "githubLink": "https://github.com/kaustav927/CryptoSniperBotBSC",
+        "description": "Developed a fully decentralized personal twitter page which stores tweet information using IPFS, queries Polygon chain data with Graph protocol and the frontend is hosted using Radical. ",
+        "githubLink": "https://github.com/kaustav927/web-tweet",
         "devpostLink": "",
-        "websiteLink": "",
-        "Tools": ["React.js", "Vue.js", "Vercel", "Flask","React.js", "Vue.js", "Vercel", "Flask"]
+        "websiteLink": "https://web-tweet.vercel.app/",
+        "Tools": ["Solidity", "Hardhat.js", "Ethers.js", "Next.js", "React.js", "TailwindCSS", "Graph Protocol", "Radical", "IPFS", "Polygon"]
     }
 
 ],
@@ -118,46 +117,46 @@
 "BestProjectData" : [
 
     {
-        "name": "LPM",
+        "name": "Loan Prediction Model",
         "id": "1",
         "timeLine": "January 2021",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ",
+        "description": "Worked with co-workers at my previous company Finastra for the annual company-wide hackathon. LPM couples a multivariate deep-learning model API with a cross-platform frontend, enabling brokers to predict their applicant’s mortgage loan approval with 91%+ accuracy. Represented my team to a panel of international judges and ended up winning first place at Hack to The Future 2020.",
         "githubLink": "https://github.com/kaustav927/LoanPredictionModel",
         "devpostLink": "https://devpost.com/software/ml-in-ml",
         "websiteLink": "https://loan-prediction-model-kaustav927.vercel.app/",
-        "Tools": ["React.js", "Vue.js", "Vercel", "Flask"]
+        "Tools": ["Python", "Pandas", "Keras", "Scikit-learn", "Flask", "Vue.js"]
     },
 
     {
         "name": "QnA Space",
         "id": "2",
         "timeLine": "March 2021",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ",
+        "description": "Participated came second place in SF Hacks 2021 with my classmates from Western University to create an ed-tech concept for courses to facilitate remote learning. QnA Space provides course administrators with a dashboard to help them analyze and bridge the gap between course content being taught, and their student’s understanding of the material, in an online setting.",
         "githubLink": "https://github.com/prabh124/qna-space",
         "devpostLink": "https://devpost.com/software/qna-space",
         "websiteLink": "",
-        "Tools": ["React.js", "Vue.js", "Vercel", "Flask","React.js", "Vue.js", "Vercel", "Flask"]
+        "Tools": ["Python", "Pandas", "GCP", "AutoML","Cloud Natural Language", "Figma"]
     },
     {
         "name": "PassKey",
-        "id": "2",
+        "id": "3",
         "timeLine": "March 2022",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ",
+        "description": "Created this as part of my fourth year Human Computer Interaction course at Western University with a group of 6 CS classmates. Chose to re design a password manager (KeyPass) and make it available as a webapp.",
         "githubLink": "https://github.com/kaustav927/PassKey",
         "devpostLink": "",
         "websiteLink": "https://pass-q7s3urrfx-kaustav927.vercel.app/",
-        "Tools": ["React.js", "Vue.js", "Vercel", "Flask"]
+        "Tools": ["Next.js", "TailwindCSS", "React.js", "Vercel","Firebase", "Figma"]
     },
 
     {
-        "name": "NFT Market Place",
+        "name": "WebTweet",
         "id": "4",
-        "timeLine": "Dec 2020-Jan 2021",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ",
-        "githubLink": "",
+        "timeLine": "May 2021",
+        "description": "Developed a fully decentralized personal twitter page which stores tweet information using IPFS, queries Polygon chain data with Graph protocol and the frontend is hosted using Radical. ",
+        "githubLink": "https://github.com/kaustav927/web-tweet",
         "devpostLink": "",
-        "websiteLink": "",
-        "Tools": ["React.js", "Vue.js", "Vercel", "Flask"]
+        "websiteLink": "https://web-tweet.vercel.app/",
+        "Tools": ["Solidity", "Hardhat.js", "Ethers.js", "Next.js", "React.js", "TailwindCSS", "Graph Protocol", "Radical", "IPFS", "Polygon"]
     }
 ]
 

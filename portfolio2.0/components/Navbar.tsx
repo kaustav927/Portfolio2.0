@@ -41,7 +41,7 @@ function MobileNav({ open, setOpen, theme, setTheme }: mobleNavProps) {
         </h1>
       </div>
 
-      <div className="flex flex-col ml-0 w-10/12">
+      <div className="flex flex-col ml-8 w-10/12">
         <Link href="/about" passHref>
           <h1
             className="text-md font-cd-medium dark:text-white py-4"
@@ -54,7 +54,7 @@ function MobileNav({ open, setOpen, theme, setTheme }: mobleNavProps) {
             About
           </h1>
         </Link>
-        <Link href="/Projects" passHref>
+        <Link href="/projects" passHref>
           <h1
             className="text-md font-cd-medium dark:text-white py-4"
             onClick={() =>
@@ -125,13 +125,13 @@ export default function Navbar() {
       ) : null}
 
       <div className="z-50 sticky top-0 w-screen overflow-x-none flex flex-col h-20 items-center filter bg-cool-white/70 dark:bg-slate-800/70 backdrop-blur-md ">
-        <nav className="flex items-center  py-4 container w-10/12 md:w-10/12 lg:w-8/12 lg:max-w-screen-lg overflow-hidden">
+        <nav className="flex items-center mt-1 py-4 container w-10/12 md:w-10/12 lg:w-8/12 lg:max-w-screen-lg overflow-hidden">
           <div className="w-3/12 flex items-left">
             <Link href="/" passHref>
                 <h1 className="cursor-default text-sm text-left font-cd-medium md:text-2xl md:font-cd-regular lg:text-2xl lg:font-cd-regular dark:text-white">@kaust_av</h1>
             </Link>
           </div>
-          <div className="w-9/12 flex justify-end  items-center font-cd-regular ">
+          <div className="w-9/12 flex justify-end items-center font-cd-regular ">
             <div
               className="z-50 flex relative w-8 h-8 flex-col justify-between items-center md:hidden"
               onClick={() => {
@@ -186,10 +186,10 @@ export default function Navbar() {
                   About
                 </h1>
               </Link>
-              <Link href="/Projects" passHref>
-                <a className="text-sm font-regular mx-2 dark:text-white">
+              <Link href="/projects" passHref>
+                <h1 className="text-sm font-regular mx-2 dark:text-white">
                   Projects
-                </a>
+                </h1>
               </Link>
               <Link href="/contact" passHref>
                 <h1 className="text-sm font-regular mx-2 dark:text-white">
