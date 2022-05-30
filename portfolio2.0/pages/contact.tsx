@@ -9,7 +9,7 @@ function contact() {
 <div className=" h-screen scroll-smooth bg-cool-white dark:bg-slate-800 text-black ">
 
 <Head>
-  <title>Kaustav Sharma | About</title>
+  <title>Kaustav Sharma | Contact</title>
   <link rel="icon" href="/favicon.ico" />
 </Head>
 <Navbar/> 
