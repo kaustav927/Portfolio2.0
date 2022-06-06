@@ -186,7 +186,7 @@ export default function Navbar() {
                   About
                 </h1>
               </Link>
-              <Link href="/projects" passHref>
+              <Link href="/Projects" passHref>
                 <h1 className="text-sm font-regular mx-2 dark:text-white">
                   Projects
                 </h1>
