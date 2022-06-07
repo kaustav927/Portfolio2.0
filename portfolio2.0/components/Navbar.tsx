@@ -54,7 +54,7 @@ function MobileNav({ open, setOpen, theme, setTheme }: mobleNavProps) {
             About
           </h1>
         </Link>
-        <Link href="/projects" passHref>
+        <Link href="/Projects" passHref>
           <h1
             className="text-md font-cd-medium dark:text-white py-4"
             onClick={() =>
