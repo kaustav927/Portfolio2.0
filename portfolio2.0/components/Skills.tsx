@@ -1,9 +1,9 @@
 import React from 'react'
 
 const Skills = () => {
-  const frontend = [ "Next.js", "React.js", "Vue.js", "SCSS", "TailwindCSS", "HTML5"]
+  const frontend = [ "Next.js", "React.js", "Vue.js", "Redux","Jest", "SCSS", "TailwindCSS", "HTML5"]
   const blockchain = ["Ethers.js", "Web3.js", "Solidity", "Hardhat.js", "Truffle Suite", "OpenZeppelin", "Graph Protocol", "IPFS", "Radical", "Moralis"]
-  const backend = [ "Node.js", "TypeScript",  "Go", "Rust", "C++", "Docker", "Python", "Flask", "AWS", "MongoDB", "Firebase"]
+  const backend = [ "Node.js", "TypeScript",  "Go", "Rust", "C++", "Docker", "Python", "Flask", "AWS", "MongoDB", "Firebase", "Vercel"]
   const design = ["Photoshop", "Webflow", "Figma", "Canva", "Sketch", "Fusion360"]
   const title = "Tech I've Used"
   return (
@@ -27,7 +27,7 @@ const Skills = () => {
             ))}
         </div>
 
-        <h1 className="text-xl font-cd-bold mt-8 dark:text-white">Web 3.0</h1>
+        <h1 className="text-xl font-cd-bold mt-8 dark:text-white">Blockchain</h1>
         <div className="flex-wrap flex mt-2">
             {blockchain.map((item, index) => (
               <span key={index} className="font-cd-medium mb-3 text-white bg-slate-800 dark:text-black dark:bg-cool-white text-sm mr-3 px-3 py-2">{item}</span>

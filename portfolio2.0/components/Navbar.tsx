@@ -124,8 +124,8 @@ export default function Navbar() {
         />
       ) : null}
 
-      <div className="z-50 sticky top-0 w-screen overflow-x-none flex flex-col h-20 items-center filter bg-cool-white/70 dark:bg-slate-800/70 backdrop-blur-md ">
-        <nav className="flex items-center mt-1 py-4 container w-10/12 md:w-10/12 lg:w-8/12 lg:max-w-screen-lg overflow-hidden">
+      <div className="z-50 sticky top-0 w-screen overflow-x-hidden flex flex-col h-20 items-center filter bg-cool-white/70 dark:bg-slate-800/70 backdrop-blur-md">
+        <nav className="flex items-center mt-1 py-4 container w-10/12 md:w-10/12 lg:w-8/12 lg:max-w-screen-lg overflow-hidden lg:mr-4">
           <div className="w-3/12 flex items-left">
             <Link href="/" passHref>
                 <h1 className="cursor-default text-sm text-left font-cd-medium md:text-2xl md:font-cd-regular lg:text-2xl lg:font-cd-regular dark:text-white">@kaust_av</h1>
@@ -133,7 +133,7 @@ export default function Navbar() {
           </div>
           <div className="w-9/12 flex justify-end items-center font-cd-regular ">
             <div
-              className="z-50 flex relative w-8 h-8 flex-col justify-between items-center md:hidden"
+              className="z-50 flex relative w-8 h-8 flex-col justify-between items-center md:hidden mr-4"
               onClick={() => {
                 setOpen(!open);
               }}

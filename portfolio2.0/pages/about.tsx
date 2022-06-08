@@ -30,7 +30,7 @@ const About: NextPage = () => {
                 <Image className="rounded-lg boxShadow-lg" src="/images/pp.png" alt="" width="550" height="550"  />
               </div>
               <div className="py-8 mb-24 dark:text-white font-cd-medium">
-                <p className="text-justify mb-8 text-sm">Hi, I&apos;m Kaustav Sharma, a front-end engineer/dev, hacker, designer and 3D printer based in Toronto, Canada. </p>
+                <p className="text-justify mb-8 text-sm">Hi, I&apos;m Kaustav Sharma, a front-end engineer/dev, hacker, designer and pro google searcher based in Toronto, Canada. </p>
                 <p className="text-justify mb-8 text-sm">I started my coding journey by programming autonomous vehicle controls for VEX robotics in high school. My curiosity for computers lead me to pursue a CS degree at university, where I also gained over a year of internship experience working in a variety of engineer/dev and design roles.</p>
                 <p className="text-justify mb-8 text-sm">My experience lead me to identify front-end development, product design, and full-stack development as the fields I’d like to specialize in most as of now. I am motivated to keep my skills fresh by completing side projects and reading about cutting-edge advancements blockchain, manufacturing, artificial intelligence and robotics. </p>
                 <p className="text-justify mb-8 text-sm">Currently, I am looking for new-grad software engineer or frontend developer roles as I finish up my undergrad degree.  </p>
