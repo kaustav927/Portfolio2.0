@@ -70,7 +70,7 @@ const BestProjects = () => {
                       </h1>
                       <div className="flex-wrap flex mt-2">
                       {project.Tools.map((tool:string, indexOne:number) => (
-                        <span key={indexOne} className="font-cd-medium mb-3 text-white bg-slate-800 dark:text-black dark:bg-cool-white text-sm mr-3 px-3 py-2">{tool}</span>
+                        <span key={indexOne} className="font-cd-medium mb-3 text-white bg-black dark:text-black dark:bg-cool-white text-sm mr-3 px-3 py-2">{tool}</span>
                       ))}
                       </div>
                     </div>

@@ -6,14 +6,14 @@ import Link from "next/link";
 
 function contact() {
   return (
-<div className=" h-screen scroll-smooth bg-cool-white dark:bg-slate-800 text-black ">
+<div className=" h-screen scroll-smooth bg-cool-white dark:bg-black text-black ">
 
 <Head>
   <title>Kaustav Sharma | Contact</title>
   <link rel="icon" href="/favicon.ico" />
 </Head>
 <Navbar/> 
-<div className="flex flex-col items-center bg-cool-white dark:bg-slate-800 overflow-x-hidden">
+<div className="flex flex-col items-center bg-cool-white dark:bg-black overflow-x-hidden">
   <div className="container justify-between w-10/12 md:w-10/12 lg:w-8/12 lg:max-w-screen-lg flex flex-col items-center py-4">
 
       <div className="container mt-1 flex flex-col justify-center items-center h-full px overflow-hidden dark:text-white">

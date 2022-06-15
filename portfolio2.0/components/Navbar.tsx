@@ -124,11 +124,11 @@ export default function Navbar() {
         />
       ) : null}
 
-      <div className="z-50 sticky top-0 w-screen overflow-x-hidden flex flex-col h-20 items-center filter bg-cool-white/70 dark:bg-slate-800/70 backdrop-blur-md">
+      <div className="z-50 sticky top-0 w-screen overflow-x-hidden flex flex-col h-20 items-center filter bg-cool-white/70 dark:bg-black/50 backdrop-blur-sm">
         <nav className="flex items-center mt-1 py-4 container w-10/12 md:w-10/12 lg:w-8/12 lg:max-w-screen-lg overflow-hidden lg:mr-4">
           <div className="w-3/12 flex items-left">
             <Link href="/" passHref>
-                <h1 className="cursor-default text-sm text-left font-cd-medium md:text-2xl md:font-cd-regular lg:text-2xl lg:font-cd-regular dark:text-white">@kaust_av</h1>
+                <h1 className="cursor-default text-sm text-left font-cd-medium md:text-xl  lg:text-xl  dark:text-white">Kaustav</h1>
             </Link>
           </div>
           <div className="w-9/12 flex justify-end items-center font-cd-regular ">

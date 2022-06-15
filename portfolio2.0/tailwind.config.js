@@ -16,7 +16,8 @@ module.exports = {
         midnight: '#121063',
         metal:'#565584',
         'tahiti-blue':'#3AB7BF',
-        'cool-white':'#D4D5CF',
+       // 'cool-white':'#D4D5CF',
+        'cool-white':'#F5F5F5',
         'bubble-gum':'#FF77E9',
         'copper-rust':'#78DCCA'
       },
