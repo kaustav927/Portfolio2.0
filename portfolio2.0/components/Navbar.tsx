@@ -133,7 +133,7 @@ export default function Navbar() {
           </div>
           <div className="w-9/12 flex justify-end items-center font-cd-regular ">
             <div
-              className="z-50 flex relative w-8 h-8 flex-col justify-between items-center md:hidden mr-4"
+              className="z-50 flex relative w-8 h-8 flex-col justify-between items-center md:hidden"
               onClick={() => {
                 setOpen(!open);
               }}
