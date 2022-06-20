@@ -51,7 +51,7 @@ const TimelineProjects =() => {
         <h2 id="work" className="text-4xl underline font-cd-bold dark:text-white">
           2022
         </h2>
-        {projectData22.map((_project:project, index: any) => (
+        {projectData22.slice(0).reverse().map((_project:project, index: any) => (
           <div
             key={_project.id}
             className="flex flex-col  mt-6 py-4 cursor-pointer"
@@ -62,7 +62,9 @@ const TimelineProjects =() => {
               key={index}
             >
               <span className="flex justify-between">
-                {_project.name}
+                <span>
+                  {_project.name}<span  className="text-xs font-cd-light justify-start mx-4">{_project.timeLine}</span>
+                </span>
                 {selected22 === index ? (
                   <FiMinus className=" text-xs h-4 w-4 mt-4 dark:text-white" />
                 ) : (
@@ -128,7 +130,7 @@ const TimelineProjects =() => {
       <h2 id="work" className="text-4xl underline font-cd-bold dark:text-white">
         2021
       </h2>
-      {projectData21.map((project2:project, index: any) => (
+      {projectData21.slice(0).reverse().map((project2:project, index: any) => (
         <div
           key={project2.id}
           className="flex flex-col  mt-6 py-4 cursor-pointer"
@@ -139,7 +141,9 @@ const TimelineProjects =() => {
             key={index}
           >
             <span className="flex justify-between">
-              {project2.name}
+                <span>
+                  {project2.name}<span  className="text-xs font-cd-light justify-start mx-4">{project2.timeLine}</span>
+                </span>
               {selected21 === index ? (
                 <FiMinus className=" text-xs h-4 w-4 mt-4 dark:text-white" />
               ) : (
@@ -205,7 +209,7 @@ const TimelineProjects =() => {
         <h2 id="work" className="text-4xl underline font-cd-bold dark:text-white">
           2020
         </h2>
-        {projectData20.map((project3: project, index: any) => (
+        {projectData20.slice(0).reverse().map((project3: project, index: any) => (
           <div
             key={project3.id}
             className="flex flex-col  mt-6 py-4 cursor-pointer"
@@ -216,7 +220,9 @@ const TimelineProjects =() => {
               key={index}
             >
               <span className="flex justify-between">
-                {project3.name}
+                <span>
+                  {project3.name}<span  className="text-xs font-cd-light justify-start mx-4">{project3.timeLine}</span>
+                </span>
                 {selected20 === index ? (
                   <FiMinus className=" text-xs h-4 w-4 mt-4 dark:text-white" />
                 ) : (

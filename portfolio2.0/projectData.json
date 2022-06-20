@@ -98,7 +98,7 @@
         "githubLink": "https://github.com/kaustav927/Portfolio2.0",
         "devpostLink": "",
         "websiteLink": "",
-        "Tools": ["Next.js", "TailwindCSS", "React.js", "TypeScript", "Vercel" ]
+        "Tools": ["Next.js", "TailwindCSS", "React.js", "TypeScript", "Vercel"]
     },
 
     {
@@ -110,6 +110,16 @@
         "devpostLink": "",
         "websiteLink": "https://web-tweet.vercel.app/",
         "Tools": ["Solidity", "Hardhat.js", "Ethers.js", "Next.js", "React.js", "TailwindCSS", "Graph Protocol", "Radical", "IPFS", "Polygon"]
+    },
+    {
+        "name": "Wave Portal",
+        "id": "5",
+        "timeLine": "June 2022",
+        "description": "Built one of Buildspace's weekend projects for their intro to smart contracts. This app allows users to connect their wallet and wave to me with a message. Waves and messages are stored in the blockchain, and users can see all waves. ",      
+        "githubLink": "https://github.com/kaustav927/Wave-Portal/tree/master",
+        "devpostLink": "",
+        "websiteLink": "https://wave-portal-rust-ten.vercel.app/",
+        "Tools": ["Solidity", "Hardhat.js", "Next.js", "Ethers.js", "Ethereum", "TailwindCSS", "Alchemy", "Vercel"]
     }
 
 ],
