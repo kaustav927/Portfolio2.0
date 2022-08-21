@@ -6,6 +6,7 @@ import Hero from "../components/Hero";
 import BestProjects from "../components/BestProjects";
 import Footer from "../components/Footer";
 import Skills from "../components/Skills";
+import NFT from "../components/NFT";
 //import {Parallax, ParallaxLayer} from '@react-spring/parallax'
 const Home: NextPage = () => {
   return (
@@ -19,6 +20,8 @@ const Home: NextPage = () => {
         
         <Hero />
         <BestProjects />
+        {/*<NFT/>*/}
+        <NFT/>
         <Skills />
         <Footer />
       </div>

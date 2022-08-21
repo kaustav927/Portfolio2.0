@@ -127,7 +127,7 @@
 "BestProjectData" : [
 
     {
-        "name": "Loan Prediction Model",
+        "name": "LPM",
         "id": "1",
         "timeLine": "January 2021",
         "description": "Worked with co-workers at my previous company Finastra for the annual company-wide hackathon. LPM couples a multivariate deep-learning model API with a cross-platform frontend, enabling brokers to predict their applicant’s mortgage loan approval with 91%+ accuracy. Represented my team to a panel of international judges and ended up winning first place at Hack to The Future 2020.",
