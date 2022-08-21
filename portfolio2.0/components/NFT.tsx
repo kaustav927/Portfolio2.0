@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "../components/card";
+
 function NFT() {
   const openSeaLinks = [
     "https://opensea.io/assets/matic/0x3cd266509d127d0eac42f4474f57d0526804b44e/20014",
@@ -11,7 +11,7 @@ function NFT() {
       <h2 className="underline relative text-4xl font-cd-bold dark:text-white">
         NFTs
       </h2>
-      <div className="flex items-start justify-between">
+      <div className="flex flex-wrap items-start justify-between">
         {openSeaLinks.map((url, index) => (
           <div key={index} className="bg-white w-20 h-20 py-3 px-2 z-50">
             {url}
