@@ -2,7 +2,9 @@
   reactStrictMode: true,
 
   images: {
-    disableStaticImages: true
+    dangerouslyAllowSVG: true,
+    disableStaticImages: true,
+    domains: ['images.unsplash.com','tokens.buildspace.so', 'storage.googleapis.com','polygontechnology.notion.site'],
   },
   webpack: (config, options) => {
     config.module.rules.push({

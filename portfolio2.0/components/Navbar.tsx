@@ -12,15 +12,10 @@ interface mobleNavProps {
   setTheme: Function;
 }
 
-
-
-
-
-
 function MobileNav({ open, setOpen, theme, setTheme }: mobleNavProps) {
   return (
     <div
-      className={`absolute top-0 left-0 overflow-x-hidden h-screen w-screen z-50 bg-cool-white/70 dark:bg-slate-800/70 backdrop-blur-md transform ${
+      className={`absolute top-0 left-0 overflow-x-hidden h-screen w-screen z-50 bg-cool-white/70 dark:bg-black/70 backdrop-blur-md transform ${
         open ? "-translate-x-0" : "-translate-x-full"
       } transition-transform duration-300 ease-in-out filter  lg:hidden`}
     >
@@ -101,14 +96,6 @@ function MobileNav({ open, setOpen, theme, setTheme }: mobleNavProps) {
   );
 }
 
-
-
-
-
-
-
-
-
 export default function Navbar() {
   const { theme, setTheme } = useTheme();
   const [open, setOpen] = useState(false);
@@ -128,7 +115,9 @@ export default function Navbar() {
         <nav className="flex items-center mt-1 py-4 container w-10/12 md:w-10/12 lg:w-8/12 lg:max-w-screen-lg overflow-hidden lg:mr-4">
           <div className="w-3/12 flex items-left">
             <Link href="/" passHref>
-                <h1 className="cursor-default text-sm text-left font-cd-medium md:text-xl  lg:text-xl  dark:text-white">Kaustav</h1>
+              <h1 className="cursor-default text-sm text-left font-cd-medium md:text-xl  lg:text-xl  dark:text-white">
+                Kaustav
+              </h1>
             </Link>
           </div>
           <div className="w-9/12 flex justify-end items-center font-cd-regular ">
