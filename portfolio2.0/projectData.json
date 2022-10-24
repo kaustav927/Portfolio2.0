@@ -184,6 +184,13 @@
         "marketplaceURL":"https://stratosnft.io/asset/0xaAcb0B62aEB7Db938f12161Da0E45fC3B2B34179/259",
         "scanLink":"https://arbiscan.io/tx/0x580ffc830f28f94dfe500bbcc96a2560ca126c540cb3169541e06df51d02e6c2",
         "contractAddress":"0xaAcb0B62aEB7Db938f12161Da0E45fC3B2B34179"
+    },
+    {
+        "network": "Arbitrum",
+        "imgURL":"https://stratosnft.io/_next/image?url=https%3A%2F%2Fquixotic.infura-ipfs.io%2Fipfs%2FQmdtW3ttRH2jmcb81yfcqqfBp48mnXD8NhqGiX53LK4JzR&w=3840&q=75",
+        "marketplaceURL":"https://stratosnft.io/asset/0xA457A0F9b6EDbEc66941D7Ed1D4d4834330ABf52/176",
+        "scanLink":"https://arbiscan.io/tx/0x99594612df146d972a7e89bbbaa0d30f995969809554e2af6c8743fa4c65496b",
+        "contractAddress":"0xa457a0f9b6edbec66941d7ed1d4d4834330abf52"
     }
 ]
 
