@@ -172,10 +172,18 @@
 
 "NFTData":[
     {
+        "network": "Polygon",
         "imgURL":"https://tokens.buildspace.so/assets/CHce52f64e-ec21-4b07-82c5-b3aaea6a9245-117/render.png",
-        "openSeaURL":"https://opensea.io/assets/matic/0x3cd266509d127d0eac42f4474f57d0526804b44e/20014",
+        "marketplaceURL":"https://opensea.io/assets/matic/0x3cd266509d127d0eac42f4474f57d0526804b44e/20014",
         "scanLink":"https://polygonscan.com/address/0x3cd266509d127d0eac42f4474f57d0526804b44e",
-        "LogoSVGLink":"https://polygontechnology.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F938afd3e-e620-4946-9206-41d9f00e581e%2FPrimary_Token.svg?table=block&id=d05c50cf-35fc-4a93-b645-c38a5210aa3c&spaceId=51562dc1-1dc5-4484-bf96-2aeac848ae2f&userId=&cache=v2"
+        "contractAddress":"0x3CD266509D127d0Eac42f4474F57D0526804b44e"
+    },
+    {
+        "network": "Arbitrum",
+        "imgURL":"https://stratosnft.io/_next/image?url=https%3A%2F%2Fquixotic.infura-ipfs.io%2Fipfs%2FQmNa2q358mBGwwvChnoqKanfoBpDC41uFF54Sr1KLw4Y8Z&w=3840&q=75",
+        "marketplaceURL":"https://stratosnft.io/asset/0xaAcb0B62aEB7Db938f12161Da0E45fC3B2B34179/259",
+        "scanLink":"https://arbiscan.io/tx/0x580ffc830f28f94dfe500bbcc96a2560ca126c540cb3169541e06df51d02e6c2",
+        "contractAddress":"0xaAcb0B62aEB7Db938f12161Da0E45fC3B2B34179"
     }
 ]
 

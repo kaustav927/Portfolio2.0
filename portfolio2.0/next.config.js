@@ -4,7 +4,7 @@
   images: {
     dangerouslyAllowSVG: true,
     disableStaticImages: true,
-    domains: ['images.unsplash.com','tokens.buildspace.so', 'storage.googleapis.com','polygontechnology.notion.site'],
+    domains: ['images.unsplash.com','tokens.buildspace.so', "stratosnft.io",'storage.googleapis.com','polygontechnology.notion.site'],
   },
   webpack: (config, options) => {
     config.module.rules.push({
