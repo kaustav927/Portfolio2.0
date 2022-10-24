@@ -30,7 +30,7 @@ function MobileNav({ open, setOpen, theme, setTheme }: mobleNavProps) {
           ) : (
             <BsFillSunFill
               className="text-white"
-              onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
             />
           )}
         </h1>
