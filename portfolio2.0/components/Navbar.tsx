@@ -21,7 +21,7 @@ function MobileNav({ open, setOpen, theme, setTheme }: mobleNavProps) {
     >
       <div className="flex items-center mt-20 justify-center filter h-20 md:hidden">
         {/*logo container*/}
-        <h1 className="text-2xl mx-auto ">
+        <h1 className="text-2xl mx-auto">
           {theme === "light" ? (
             <BsFillMoonFill
               className="text-black"
@@ -39,7 +39,7 @@ function MobileNav({ open, setOpen, theme, setTheme }: mobleNavProps) {
       <div className="flex flex-col ml-8 w-10/12">
         <Link href="/about" passHref>
           <h1
-            className="text-md font-cd-medium dark:text-white py-4"
+            className="text-md font-cd-medium dark:text-white py-4 cursor-pointer"
             onClick={() =>
               setTimeout(() => {
                 setOpen(!open);
@@ -51,7 +51,7 @@ function MobileNav({ open, setOpen, theme, setTheme }: mobleNavProps) {
         </Link>
         <Link href="/Projects" passHref>
           <h1
-            className="text-md font-cd-medium dark:text-white py-4"
+            className="text-md font-cd-medium dark:text-white py-4 cursor-pointer"
             onClick={() =>
               setTimeout(() => {
                 setOpen(!open);
@@ -63,7 +63,7 @@ function MobileNav({ open, setOpen, theme, setTheme }: mobleNavProps) {
         </Link>
         <Link href="/contact" passHref>
           <h1
-            className="text-md font-cd-medium dark:text-white py-4"
+            className="text-md font-cd-medium dark:text-white py-4 cursor-pointer"
             onClick={() =>
               setTimeout(() => {
                 setOpen(!open);
@@ -80,7 +80,7 @@ function MobileNav({ open, setOpen, theme, setTheme }: mobleNavProps) {
             rel="noreferrer"
           >
             <h1
-              className="text-md font-cd-medium dark:text-white py-4 "
+              className="text-md font-cd-medium dark:text-white py-4 cursor-pointer"
               onClick={() =>
                 setTimeout(() => {
                   setOpen(!open);
@@ -165,23 +165,23 @@ export default function Navbar() {
               </h1>
 
               <Link href="/" passHref>
-                <h1 className="text-sm font-regular mx-2 dark:text-white">
+                <h1 className="text-sm font-regular mx-2 dark:text-white cursor-pointer">
                   Home
                 </h1>
               </Link>
 
               <Link href="/about" passHref>
-                <h1 className="text-sm font-regular mx-2 dark:text-white">
+                <h1 className="text-sm font-regular mx-2 dark:text-white cursor-pointer">
                   About
                 </h1>
               </Link>
               <Link href="/Projects" passHref>
-                <h1 className="text-sm font-regular mx-2 dark:text-white">
+                <h1 className="text-sm font-regular mx-2 dark:text-white cursor-pointer">
                   Projects
                 </h1>
               </Link>
               <Link href="/contact" passHref>
-                <h1 className="text-sm font-regular mx-2 dark:text-white">
+                <h1 className="text-sm font-regular mx-2 dark:text-white cursor-pointer">
                   Contact
                 </h1>
               </Link>
