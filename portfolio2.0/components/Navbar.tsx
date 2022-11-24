@@ -146,12 +146,12 @@ export default function Navbar() {
             </div>
 
             <div className="hidden md:flex">
-              <h1 className="text-lg px-4">
+              <h1 className="text-lg px-4 z-50">
                 {theme === "light" ? (
                   <BsFillMoonFill
-                    className="text-slate-800 z-50"
+                    className="text-slate-800 "
                     onClick={() =>
-                      setTheme(theme === "light" ? "dark" : "light")
+                      setTheme(theme === "dark" ? "dark" : "light")
                     }
                   />
                 ) : (

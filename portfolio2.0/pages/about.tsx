@@ -31,9 +31,9 @@ const About: NextPage = () => {
               </div>
               <div className="py-8 mb-24 dark:text-white font-cd-medium">
                 <p className="text-justify mb-8 text-sm">Hi, I&apos;m Kaustav Sharma, a full-stack engineer/dev, hacker, designer and pro google searcher based in Toronto, Canada. </p>
-                <p className="text-justify mb-8 text-sm">I started my coding journey by programming autonomous vehicle controls for VEX robotics in high school using ROBOTC. My curiosity for computers led me to pursue a computer Science degree at Western University, where I gained a year of internship experience working in various engineering and design roles at companies like Finastra and IBM.</p>
-                <p className="text-justify mb-8 text-sm">My experiences led me to identify frontend development, product design, and full-stack development as the fields I’d like to specialize in most right now. I am motivated to keep my skills fresh by completing side projects and reading about cutting-edge advancements in blockchain, manufacturing, artificial intelligence and robotics. </p>
-                <p className="text-justify mb-8 text-sm">Currently, I am looking for new-grad software engineer, full-stack dev or frontend dev roles as I recently graduated with my computer science degree. </p>
+                <p className="text-justify mb-8 text-sm">I started my coding journey by programming autonomous vehicle controls for VEX robotics in high school using ROBOTC. My curiosity for computers led me to pursue a Computer Science degree at Western University, where I gained 1 year of internship experience working in various engineering and design roles at companies like Finastra and IBM.</p>
+                <p className="text-justify mb-8 text-sm">My experiences led me to identify frontend development, product design, and full-stack development as the fields I’d like to pursue as I enter the begining of my programming career. I am motivated to keep my skills fresh by completing side projects and reading about cutting-edge advancements in blockchain, manufacturing, artificial intelligence and robotics. </p>
+                <p className="text-justify mb-8 text-sm">Currently, I am looking for new-grad software engineer, full-stack dev or frontend dev roles as I recently graduated with my Computer Science degree. </p>
               </div>
           </div>
       
