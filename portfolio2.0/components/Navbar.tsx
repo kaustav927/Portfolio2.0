@@ -149,9 +149,9 @@ export default function Navbar() {
               <h1 className="text-lg px-4 z-50">
                 {theme === "light" ? (
                   <BsFillMoonFill
-                    className="text-slate-800 "
+                    className="text-slate-800 z-50"
                     onClick={() =>
-                      setTheme(theme === "dark" ? "dark" : "light")
+                      setTheme(theme === "light" ? "dark" : "light")
                     }
                   />
                 ) : (
