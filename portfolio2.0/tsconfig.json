@@ -26,7 +26,8 @@
     "**/*.tsx",
     "components/Navbar.js",
     "components/Navbar.tsx",
-    "additional.d.ts"
+    "additional.d.ts",
+    "pages/_document.js"
   ],
   "exclude": [
     "node_modules"
